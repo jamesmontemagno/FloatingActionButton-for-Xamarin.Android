@@ -12,7 +12,7 @@ Android floating action button which reacts on scrolling events. Becomes visible
 
 ### Integration
 
-**1)** Add the Component to your Project
+**1)** Add the NuGet to your Project: https://www.nuget.org/packages/Refractored.FloatingActionButton/
 
 
 **2)** Add the ``com.refractored.fab.FloatingActionButton`` to your layout XML file. The button should be placed in the bottom right corner of the screen. The width and height of the floating action button are hardcoded to **56dp** for the normal and **40dp** for the mini button as specified in the [guidlines].
