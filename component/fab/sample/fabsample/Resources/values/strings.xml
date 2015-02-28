@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Floating Action Button</string>
+    <string name="about">About</string>
+    <string name="about_body">
+          <![CDATA[
+        Floating Action Button, a library port by <a href="http://twitter.com/jamesmontemagno">James Montemagno</a>.<br/>
+        <a href=\'https://github.com/jamesmontemagno/FloatingActionButton-for-Xamarin.Android\'>https://github.com/jamesmontemagno/FloatingActionButton-for-Xamarin.Android</a>
+    ]]></string>
+</resources>

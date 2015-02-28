@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+   <metadata minClientVersion="2.8.1">
+       <id>Refractored.FloatingActionButton</id>
+       <version>1.0.20</version>
+       <title>Floating Action Button for Xamarin.Android</title>
+       <authors>James Montemagno</authors>
+       <owners>James Montemagno</owners>
+       <licenseUrl>https://github.com/jamesmontemagno/FloatingActionButton-for-Xamarin.Android/blob/master/LICENSE.md</licenseUrl>
+       <projectUrl>https://github.com/jamesmontemagno/FloatingActionButton-for-Xamarin.Android</projectUrl>
+     <!--Default Icon, a template can be found:  https://raw.githubusercontent.com/jamesmontemagno/Xamarin-Templates/master/Plugins-Templates/icons/plugin_icon.png-->
+     <iconUrl>http://www.refractored.com/images/fab.png</iconUrl>
+     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+       <description>
+         Android floating action button which reacts on scrolling events. Becomes visible when an attached target is scrolled up and invisible when scrolled down.
+       </description>
+       <summary>Android floating action button which reacts on scrolling events. Becomes visible when an attached target is scrolled up and invisible when scrolled down. See Project Site for Sample.</summary>
+       <tags>xamarin, xamarin.android, android, fab, floating action butto, monodroid</tags>
+       <dependencies>
+         <dependency id="Xamarin.Android.Support.v7.RecyclerView" version="21.0.3" />
+       </dependencies>
+   </metadata>
+   <files>
+
+     <!--Xamarin.Android-->
+     <file src="library\bin\Release\Refractored.FloatingActionButton.dll" target="lib\MonoAndroid10\Refractored.FloatingActionButton.dll" />
+     <file src="library\bin\Release\Refractored.FloatingActionButton.xml" target="lib\MonoAndroid10\Refractored.FloatingActionButton.xml" />
+     <file src="library\bin\Release\Refractored.FloatingActionButton.pdb" target="lib\MonoAndroid10\Refractored.FloatingActionButton.pdb" />
+  
+
+   </files>
+</package>

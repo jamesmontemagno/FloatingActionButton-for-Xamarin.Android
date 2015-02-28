@@ -1,0 +1,20 @@
+%YAML 1.2
+---
+summary: Android floating action button which reacts on scrolling events. Becomes visible when an attached target is scrolled up and invisible when scrolled down.
+getting-started: GettingStarted.md
+details: Details.md
+license: License.md
+icons: 
+  - fab_128x128.png
+  - fab_512x512.png
+publisher: James Montemagno
+name: Floating Action Button
+id: fab
+samples: 
+  Android Sample: ../samples/fabsample/fabsample.sln
+publisher-url: https://github.com/jamesmontemagno/FloatingActionButton-for-Xamarin.Android
+is_shell: true
+packages:
+  android: Refractored.FloatingActionButton, Version=1.0.20
+version: 1.0.20
+...
