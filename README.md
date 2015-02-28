@@ -56,7 +56,7 @@ Check the sample project to see how to use custom listeners if you need to track
 + Set the button type (normal or mini) via the ``fab_type`` xml attribute (default is normal):
 
     ```xml
-    fab:fab_type="mini"
+    fab:fab_size="mini"
     ```
     or
     ```csharp
