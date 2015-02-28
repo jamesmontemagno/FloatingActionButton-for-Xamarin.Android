@@ -11,7 +11,7 @@ publisher: James Montemagno
 name: Floating Action Button
 id: fab
 samples: 
-  Android Sample: ../samples/fabsample/fabsample.sln
+  Android Sample: ../s/fabsample.sln
 publisher-url: https://github.com/jamesmontemagno/FloatingActionButton-for-Xamarin.Android
 is_shell: true
 packages:
