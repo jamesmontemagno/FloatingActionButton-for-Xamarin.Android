@@ -157,6 +157,7 @@ namespace FabSample
       var fab = root.FindViewById<FloatingActionButton>(Resource.Id.fab);
       fab.AttachToRecyclerView(recyclerView, this);
       fab.Size = FabSize.Mini;
+      fab.Enabled = false;
       fab.Click += (sender, args) =>
       {
         Toast.MakeText(Activity, "FAB Clicked!", ToastLength.Short).Show();

@@ -27,20 +27,23 @@ namespace com.refractored.fab
 		public partial class Attribute
 		{
 			
+			// aapt resource value: 0x7f010002
+			public static int fab_colorDisabled = 2130771970;
+			
 			// aapt resource value: 0x7f010001
 			public static int fab_colorNormal = 2130771969;
 			
 			// aapt resource value: 0x7f010000
 			public static int fab_colorPressed = 2130771968;
 			
-			// aapt resource value: 0x7f010002
-			public static int fab_colorRipple = 2130771970;
-			
 			// aapt resource value: 0x7f010003
-			public static int fab_shadow = 2130771971;
+			public static int fab_colorRipple = 2130771971;
 			
 			// aapt resource value: 0x7f010004
-			public static int fab_size = 2130771972;
+			public static int fab_shadow = 2130771972;
+			
+			// aapt resource value: 0x7f010005
+			public static int fab_size = 2130771973;
 			
 			static Attribute()
 			{
@@ -145,7 +148,11 @@ namespace com.refractored.fab
 					2130771969,
 					2130771970,
 					2130771971,
-					2130771972};
+					2130771972,
+					2130771973};
+			
+			// aapt resource value: 2
+			public static int FloatingActionButton_fab_colorDisabled = 2;
 			
 			// aapt resource value: 1
 			public static int FloatingActionButton_fab_colorNormal = 1;
@@ -153,14 +160,14 @@ namespace com.refractored.fab
 			// aapt resource value: 0
 			public static int FloatingActionButton_fab_colorPressed = 0;
 			
-			// aapt resource value: 2
-			public static int FloatingActionButton_fab_colorRipple = 2;
-			
 			// aapt resource value: 3
-			public static int FloatingActionButton_fab_shadow = 3;
+			public static int FloatingActionButton_fab_colorRipple = 3;
 			
 			// aapt resource value: 4
-			public static int FloatingActionButton_fab_size = 4;
+			public static int FloatingActionButton_fab_shadow = 4;
+			
+			// aapt resource value: 5
+			public static int FloatingActionButton_fab_size = 5;
 			
 			static Styleable()
 			{

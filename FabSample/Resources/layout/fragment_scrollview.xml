@@ -28,5 +28,6 @@
         fab:fab_colorPressed="@color/accent_pressed"
         fab:fab_colorRipple="@color/ripple"
         fab:fab_size="mini"
-        fab:fab_shadow="false"/>
+        fab:fab_shadow="false"
+        android:enabled="false"/>
 </FrameLayout>

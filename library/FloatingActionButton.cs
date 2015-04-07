@@ -96,6 +96,34 @@ namespace com.refractored.fab
     {
       ColorPressed = Resources.GetColor(colorResId);
     }
+
+
+
+    private int colorDisabled;
+    /// <summary>
+    /// Gets or sets the normal color
+    /// </summary>
+    public int ColorDisabled
+    {
+      get { return colorDisabled; }
+      set
+      {
+        if (colorDisabled == value)
+          return;
+
+        colorDisabled = value;
+        UpdateBackground();
+      }
+    }
+    /// <summary>
+    /// Sets the color normal by res id
+    /// </summary>
+    /// <param name="colorresId"></param>
+    public void SetColorDisabledResId(int colorResId)
+    {
+      ColorDisabled = Resources.GetColor(colorResId);
+    }
+
     private int colorRipple;
     /// <summary>
     /// Gets or sets ripple color
@@ -243,6 +271,7 @@ namespace com.refractored.fab
       colorNormal = Resources.GetColor(Resource.Color.fab_material_blue_500);
       colorPressed = Resources.GetColor(Resource.Color.fab_material_blue_600);
       colorRipple  = Resources.GetColor(Android.Resource.Color.White);
+      colorDisabled = Resources.GetColor(Android.Resource.Color.DarkerGray);
       size = FabSize.Normal;
       hasShadow = true;
       scrollThreshold = Resources.GetDimensionPixelOffset(Resource.Dimension.fab_scroll_threshold);
@@ -261,9 +290,11 @@ namespace com.refractored.fab
 
       try
       {
+       
         colorNormal = attr.GetColor(Resource.Styleable.FloatingActionButton_fab_colorNormal, Resources.GetColor(Resource.Color.fab_material_blue_500));
         colorPressed = attr.GetColor(Resource.Styleable.FloatingActionButton_fab_colorPressed, Resources.GetColor(Resource.Color.fab_material_blue_600));
         colorRipple = attr.GetColor(Resource.Styleable.FloatingActionButton_fab_colorRipple, Resources.GetColor(Android.Resource.Color.White));
+        colorDisabled = attr.GetColor(Resource.Styleable.FloatingActionButton_fab_colorDisabled, Resources.GetColor(Android.Resource.Color.DarkerGray));
         hasShadow = attr.GetBoolean(Resource.Styleable.FloatingActionButton_fab_shadow, true);
         size = (FabSize)attr.GetInt(Resource.Styleable.FloatingActionButton_fab_size, 0);
       }
@@ -279,8 +310,9 @@ namespace com.refractored.fab
     private void UpdateBackground()
     {
       var drawable = new StateListDrawable();
-      drawable.AddState(new int[]{Android.Resource.Attribute.StatePressed}, CreateDrawable(colorPressed));
-      drawable.AddState(new int[]{}, CreateDrawable(colorNormal));
+      drawable.AddState(new int[] { Android.Resource.Attribute.StatePressed }, CreateDrawable(colorPressed));
+      drawable.AddState(new int[] { -Android.Resource.Attribute.StateEnabled }, CreateDrawable(colorDisabled));
+      drawable.AddState(new int[] { }, CreateDrawable(colorNormal));
       SetBackgroundCompat(drawable);
     }
 
