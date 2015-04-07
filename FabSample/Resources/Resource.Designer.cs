@@ -33,14 +33,13 @@ namespace FabSample
 			global::com.refractored.fab.Resource.Attribute.fab_shadow = global::FabSample.Resource.Attribute.fab_shadow;
 			global::com.refractored.fab.Resource.Attribute.fab_size = global::FabSample.Resource.Attribute.fab_size;
 			global::com.refractored.fab.Resource.Color.fab_material_blue_500 = global::FabSample.Resource.Color.fab_material_blue_500;
-			global::com.refractored.fab.Resource.Color.fab_material_blue_600 = global::FabSample.Resource.Color.fab_material_blue_600;
 			global::com.refractored.fab.Resource.Dimension.fab_elevation_lollipop = global::FabSample.Resource.Dimension.fab_elevation_lollipop;
 			global::com.refractored.fab.Resource.Dimension.fab_scroll_threshold = global::FabSample.Resource.Dimension.fab_scroll_threshold;
 			global::com.refractored.fab.Resource.Dimension.fab_shadow_size = global::FabSample.Resource.Dimension.fab_shadow_size;
 			global::com.refractored.fab.Resource.Dimension.fab_size_mini = global::FabSample.Resource.Dimension.fab_size_mini;
 			global::com.refractored.fab.Resource.Dimension.fab_size_normal = global::FabSample.Resource.Dimension.fab_size_normal;
-			global::com.refractored.fab.Resource.Drawable.shadow = global::FabSample.Resource.Drawable.shadow;
-			global::com.refractored.fab.Resource.Drawable.shadow_mini = global::FabSample.Resource.Drawable.shadow_mini;
+			global::com.refractored.fab.Resource.Drawable.fab_shadow = global::FabSample.Resource.Drawable.fab_shadow;
+			global::com.refractored.fab.Resource.Drawable.fab_shadow_mini = global::FabSample.Resource.Drawable.fab_shadow_mini;
 			global::com.refractored.fab.Resource.Id.mini = global::FabSample.Resource.Id.mini;
 			global::com.refractored.fab.Resource.Id.normal = global::FabSample.Resource.Id.normal;
 			global::com.refractored.fab.Resource.Styleable.FloatingActionButton = global::FabSample.Resource.Styleable.FloatingActionButton;
@@ -677,29 +676,29 @@ namespace FabSample
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f060038
-			public const int abc_background_cache_hint_selector_material_dark = 2131099704;
+			// aapt resource value: 0x7f060037
+			public const int abc_background_cache_hint_selector_material_dark = 2131099703;
 			
-			// aapt resource value: 0x7f060039
-			public const int abc_background_cache_hint_selector_material_light = 2131099705;
+			// aapt resource value: 0x7f060038
+			public const int abc_background_cache_hint_selector_material_light = 2131099704;
 			
 			// aapt resource value: 0x7f060005
 			public const int abc_input_method_navigation_guard = 2131099653;
 			
+			// aapt resource value: 0x7f060039
+			public const int abc_primary_text_disable_only_material_dark = 2131099705;
+			
 			// aapt resource value: 0x7f06003a
-			public const int abc_primary_text_disable_only_material_dark = 2131099706;
+			public const int abc_primary_text_disable_only_material_light = 2131099706;
 			
 			// aapt resource value: 0x7f06003b
-			public const int abc_primary_text_disable_only_material_light = 2131099707;
+			public const int abc_primary_text_material_dark = 2131099707;
 			
 			// aapt resource value: 0x7f06003c
-			public const int abc_primary_text_material_dark = 2131099708;
+			public const int abc_primary_text_material_light = 2131099708;
 			
 			// aapt resource value: 0x7f06003d
-			public const int abc_primary_text_material_light = 2131099709;
-			
-			// aapt resource value: 0x7f06003e
-			public const int abc_search_url_text = 2131099710;
+			public const int abc_search_url_text = 2131099709;
 			
 			// aapt resource value: 0x7f060006
 			public const int abc_search_url_text_normal = 2131099654;
@@ -710,11 +709,11 @@ namespace FabSample
 			// aapt resource value: 0x7f060008
 			public const int abc_search_url_text_selected = 2131099656;
 			
-			// aapt resource value: 0x7f06003f
-			public const int abc_secondary_text_material_dark = 2131099711;
+			// aapt resource value: 0x7f06003e
+			public const int abc_secondary_text_material_dark = 2131099710;
 			
-			// aapt resource value: 0x7f060040
-			public const int abc_secondary_text_material_light = 2131099712;
+			// aapt resource value: 0x7f06003f
+			public const int abc_secondary_text_material_light = 2131099711;
 			
 			// aapt resource value: 0x7f060003
 			public const int accent = 2131099651;
@@ -779,9 +778,6 @@ namespace FabSample
 			// aapt resource value: 0x7f060036
 			public const int fab_material_blue_500 = 2131099702;
 			
-			// aapt resource value: 0x7f060037
-			public const int fab_material_blue_600 = 2131099703;
-			
 			// aapt resource value: 0x7f06001b
 			public const int highlighted_text_material_dark = 2131099675;
 			
@@ -818,6 +814,9 @@ namespace FabSample
 			// aapt resource value: 0x7f060000
 			public const int primary = 2131099648;
 			
+			// aapt resource value: 0x7f060001
+			public const int primary_dark = 2131099649;
+			
 			// aapt resource value: 0x7f060026
 			public const int primary_dark_material_dark = 2131099686;
 			
@@ -829,9 +828,6 @@ namespace FabSample
 			
 			// aapt resource value: 0x7f060029
 			public const int primary_material_light = 2131099689;
-			
-			// aapt resource value: 0x7f060001
-			public const int primary_pressed = 2131099649;
 			
 			// aapt resource value: 0x7f06002a
 			public const int primary_text_default_material_dark = 2131099690;
@@ -1259,61 +1255,61 @@ namespace FabSample
 			public const int ee = 2130837570;
 			
 			// aapt resource value: 0x7f020043
-			public const int fi = 2130837571;
+			public const int fab_shadow = 2130837571;
 			
 			// aapt resource value: 0x7f020044
-			public const int fr = 2130837572;
+			public const int fab_shadow_mini = 2130837572;
 			
 			// aapt resource value: 0x7f020045
-			public const int gr = 2130837573;
+			public const int fi = 2130837573;
 			
 			// aapt resource value: 0x7f020046
-			public const int hr = 2130837574;
+			public const int fr = 2130837574;
 			
 			// aapt resource value: 0x7f020047
-			public const int hu = 2130837575;
+			public const int gr = 2130837575;
 			
 			// aapt resource value: 0x7f020048
-			public const int ic_add_white_24dp = 2130837576;
+			public const int hr = 2130837576;
 			
 			// aapt resource value: 0x7f020049
-			public const int ic_launcher = 2130837577;
+			public const int hu = 2130837577;
 			
 			// aapt resource value: 0x7f02004a
-			public const int ie = 2130837578;
+			public const int ic_add_white_24dp = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int @in = 2130837579;
+			public const int ic_launcher = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int @is = 2130837580;
+			public const int ie = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int it = 2130837581;
+			public const int @in = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int lt = 2130837582;
+			public const int @is = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int lv = 2130837583;
+			public const int it = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int nl = 2130837584;
+			public const int lt = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int no = 2130837585;
+			public const int lv = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int nz = 2130837586;
+			public const int nl = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int se = 2130837587;
+			public const int no = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int shadow = 2130837588;
+			public const int nz = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int shadow_mini = 2130837589;
+			public const int se = 2130837589;
 			
 			// aapt resource value: 0x7f020056
 			public const int ua = 2130837590;

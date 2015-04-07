@@ -40,12 +40,10 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
-    <Reference Include="Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Xamarin.Android.Support.v4">
       <HintPath>packages\Xamarin.Android.Support.v4.22.0.0.0-beta2\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Android.Support.v7.RecyclerView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView">
       <HintPath>packages\Xamarin.Android.Support.v7.RecyclerView.22.0.0.0-beta2\lib\MonoAndroid403\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
     </Reference>
   </ItemGroup>
@@ -65,34 +63,16 @@
     <None Include="Resources\AboutResources.txt" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\shadow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\shadow_mini.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\shadow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\shadow_mini.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\shadow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\shadow_mini.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\shadow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\shadow_mini.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\shadow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\shadow_mini.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\fab_shadow.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\fab_shadow_mini.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\fab_shadow.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\fab_shadow_mini.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\fab_shadow.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\fab_shadow_mini.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\fab_shadow.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\fab_shadow_mini.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\fab_shadow.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\fab_shadow_mini.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\attrs.xml">

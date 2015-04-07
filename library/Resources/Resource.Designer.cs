@@ -103,10 +103,10 @@ namespace com.refractored.fab
 		{
 			
 			// aapt resource value: 0x7f020000
-			public static int shadow = 2130837504;
+			public static int fab_shadow = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public static int shadow_mini = 2130837505;
+			public static int fab_shadow_mini = 2130837505;
 			
 			static Drawable()
 			{

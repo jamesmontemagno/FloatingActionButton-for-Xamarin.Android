@@ -1,6 +1,14 @@
 ﻿<Properties StartupItem="../FabSample/FabSample.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.TA965074N8" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FloatingActionButton.cs">
+    <Files>
+      <File FileName="FloatingActionButton.cs" Line="259" Column="35" />
+      <File FileName="Resources/values/colors.xml" Line="5" Column="56" />
+      <File FileName="../FabSample/Resources/values-v21/styles.xml" Line="2" Column="1" />
+      <File FileName="../FabSample/Resources/values/colors.xml" Line="8" Column="13" />
+      <File FileName="../FabSample/Resources/values/styles.xml" Line="8" Column="13" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

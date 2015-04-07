@@ -8,7 +8,9 @@
  * 
  */
 
+#if __ANDROID_12__
 using Android.Animation;
+#endif
 using Android.Content;
 using Android.Graphics;
 using Android.Graphics.Drawables;
@@ -33,8 +35,9 @@ namespace com.refractored.fab
   {
     private const int TranslateDurationMillis = 200;
 
+    #if __ANDROID_12__
     private ITimeInterpolator interpolator = new AccelerateDecelerateInterpolator ();
-
+    #endif
     private bool marginsSet;
     
 
@@ -230,12 +233,57 @@ namespace com.refractored.fab
         }
         var translationY = visible ? 0 : height + MarginBottom;
         if (animate) {
-          Animate ().SetInterpolator (interpolator)
+
+          if ((int)Build.VERSION.SdkInt >= 12) {
+            #if __ANDROID_12__
+            Animate ().SetInterpolator (interpolator)
             .SetDuration (TranslateDurationMillis)
             .TranslationY (translationY);
+            #endif
+          } else {
+            var oldY = !visible ? 0 : height + MarginBottom;
+            var animation = new TranslateAnimation (0, 0, oldY, translationY);
+            animation.Duration = TranslateDurationMillis;
+            if (visible)
+            {
+              animation.AnimationStart += (sender, e) => {
+                this.Visibility = ViewStates.Visible;
+              };
+            }   
+            else {
+              animation.AnimationEnd += (sender, e) => {
+                this.Visibility = ViewStates.Gone; 
+              };
+            }
+            this.StartAnimation (animation);
+
+          }
         } else {
-          this.TranslationY = translationY;
-          ;
+
+          if ((int)Build.VERSION.SdkInt >= 11) {
+            #if __ANDROID_11__
+            this.TranslationY = translationY;
+            #endif
+          }
+          else{
+            var oldY = !visible ? 0 : height + MarginBottom;
+            var animation = new TranslateAnimation (0, 0, oldY, translationY);
+            animation.Duration = 0;
+
+            if (visible)
+            {
+              animation.AnimationStart += (sender, e) => {
+                this.Visibility = ViewStates.Visible;
+              };
+            }   
+            else {
+              animation.AnimationEnd += (sender, e) => {
+                this.Visibility = ViewStates.Gone; 
+              };
+            }
+            this.StartAnimation (animation);
+          }
+
         }
 
         if (!HasHoneycombApi) {
@@ -310,8 +358,8 @@ namespace com.refractored.fab
       shapeDrawable.Paint.Color = new Color (color);
       if (hasShadow && !HasLollipopApi) {
         var shadowDrawable = Resources.GetDrawable (size == FabSize.Normal ? 
-          Resource.Drawable.shadow :
-          Resource.Drawable.shadow_mini);
+          Resource.Drawable.fab_shadow :
+          Resource.Drawable.fab_shadow_mini);
 
         var layerDrawable = new LayerDrawable (new Drawable[]{ shadowDrawable, shapeDrawable });
         layerDrawable.SetLayerInset (1, shadowSize, shadowSize, shadowSize, shadowSize);
@@ -340,6 +388,7 @@ namespace com.refractored.fab
       marginsSet = true;
     }
 
+    #if __ANDROID_21__
     private class MyOutlineProvider : ViewOutlineProvider
     {
       Android.Content.Res.Resources res;
@@ -356,7 +405,9 @@ namespace com.refractored.fab
         var size = res.GetDimensionPixelSize (fabSize == FabSize.Normal ? Resource.Dimension.fab_size_normal : Resource.Dimension.fab_size_mini);
         outline.SetOval (0, 0, size, size);
       }
+    
     }
+    #endif
 
     private void SetBackgroundCompat (Drawable drawable)
     {
@@ -375,7 +426,9 @@ namespace com.refractored.fab
         Background = rippleDrawable;
 #endif
       } else if (HasJellyBeanApi) {
+        #if __ANDROID_16__
         Background = drawable;
+        #endif
       } else {
         SetBackgroundDrawable (drawable);
       }
