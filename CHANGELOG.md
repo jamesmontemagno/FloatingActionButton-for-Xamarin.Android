@@ -1,5 +1,7 @@
 Change Log
 ==========
+Version 1.3.0 (08-04-2015)
+* Finalize 1.3.0 with v22 Support Libraries
 
 Version 1.3.0-beta1 (06-04-2015)
 * Add disabled state for FAB
