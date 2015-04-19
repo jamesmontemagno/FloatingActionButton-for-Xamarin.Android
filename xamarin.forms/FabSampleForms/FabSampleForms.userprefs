@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="Droid/FabSampleForms.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="Android.Nexus_5_API21" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FabSampleForms/MainPage.cs">
+    <Files>
+      <File FileName="FabSampleForms/MainPage.cs" Line="16" Column="45" />
+      <File FileName="FabSampleForms/FloatingActionButtonView.cs" Line="36" Column="171" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
