@@ -48,11 +48,20 @@ namespace FabSampleForms
 		}
 
 		public delegate void ShowHideDelegate(bool animate = true);
+		public delegate void AttachToListViewDelegate(ListView listView);
 
 		public ShowHideDelegate Show { get; set; }
 		public ShowHideDelegate Hide { get; set; }
 		public Action<object, EventArgs> Clicked { get; set; }
+		public AttachToListViewDelegate AttachToListView { get; set; }
+//		public ListView List { get; set; }
 
+		public static readonly BindableProperty ListProperty = BindableProperty.Create<FloatingActionButtonView,ListView>( p => p.List, default(ListView));
+		public ListView List 
+		{
+			get { return (ListView)GetValue (ListProperty); } 
+			set { SetValue (ListProperty, value); } 
+		}
 	}
 }
 

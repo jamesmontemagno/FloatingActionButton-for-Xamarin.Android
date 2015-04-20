@@ -1,9 +1,10 @@
 ﻿<Properties StartupItem="Droid/FabSampleForms.Droid.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="Android.Nexus_5_API21" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FabSampleForms/MainPage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/FloatingActionButtonViewRenderer.cs">
     <Files>
-      <File FileName="FabSampleForms/MainPage.cs" Line="16" Column="45" />
-      <File FileName="FabSampleForms/FloatingActionButtonView.cs" Line="36" Column="171" />
+      <File FileName="FabSampleForms/MainPage.cs" Line="24" Column="1" />
+      <File FileName="FabSampleForms/FloatingActionButtonView.cs" Line="47" Column="37" />
+      <File FileName="Droid/FloatingActionButtonViewRenderer.cs" Line="86" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
