@@ -1,6 +1,7 @@
 ﻿using Xamarin.Forms;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using System.Collections;
 
 namespace FabSampleForms
 {
@@ -8,6 +9,7 @@ namespace FabSampleForms
 	{
 		private readonly FloatingActionButtonView fab;
 		private readonly ListView list;
+		private int appearingListItemIndex = 0;
 
 		public MainPage()
 		{
@@ -45,12 +47,6 @@ namespace FabSampleForms
 			var pageLayout = new StackLayout {
 				Children = 
 				{
-//					new Label {
-//						VerticalOptions = LayoutOptions.CenterAndExpand,
-//						XAlign = TextAlignment.Center,
-//						TextColor = Color.Black,
-//						Text = "Welcome to Xamarin Forms!" 
-//					},
 					list
 				}};
 
@@ -75,7 +71,49 @@ namespace FabSampleForms
 		protected override void OnAppearing()
 		{
 			base.OnAppearing();
-			fab.List = list;
+			list.ItemAppearing += List_ItemAppearing;
+			list.ItemDisappearing += List_ItemDisappearing;
+		}
+
+		protected override void OnDisappearing()
+		{
+			base.OnDisappearing();
+			list.ItemAppearing -= List_ItemAppearing;
+			list.ItemDisappearing -= List_ItemDisappearing;
+		}
+
+		async void List_ItemDisappearing (object sender, ItemVisibilityEventArgs e)
+		{
+			await Task.Run(() =>
+			{
+				var items = list.ItemsSource as IList;
+				if(items != null)
+				{
+					var index = items.IndexOf(e.Item);
+					if (index < appearingListItemIndex)
+					{
+						Device.BeginInvokeOnMainThread(() => fab.Hide());
+					}
+					appearingListItemIndex = index;
+				}
+			});
+		}
+
+		async void List_ItemAppearing (object sender, ItemVisibilityEventArgs e)
+		{
+			await Task.Run(() =>
+			{
+				var items = list.ItemsSource as IList;
+				if(items != null)
+				{
+					var index = items.IndexOf(e.Item);
+					if (index < appearingListItemIndex)
+					{
+						Device.BeginInvokeOnMainThread(() => fab.Show());
+					}
+					appearingListItemIndex = index;
+				}
+			});
 		}
 	}
 }

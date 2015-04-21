@@ -1,10 +1,10 @@
-﻿<Properties StartupItem="Droid/FabSampleForms.Droid.csproj">
+﻿<Properties StartupItem="Droid/FabSampleForms.Droid.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="Android.Nexus_5_API21" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/FloatingActionButtonViewRenderer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FabSampleForms/MainPage.cs">
     <Files>
-      <File FileName="FabSampleForms/MainPage.cs" Line="24" Column="1" />
-      <File FileName="FabSampleForms/FloatingActionButtonView.cs" Line="47" Column="37" />
-      <File FileName="Droid/FloatingActionButtonViewRenderer.cs" Line="86" Column="4" />
+      <File FileName="FabSampleForms/MainPage.cs" Line="27" Column="4" />
+      <File FileName="FabSampleForms/FloatingActionButtonView.cs" Line="1" Column="1" />
+      <File FileName="Droid/FloatingActionButtonViewRenderer.cs" Line="92" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

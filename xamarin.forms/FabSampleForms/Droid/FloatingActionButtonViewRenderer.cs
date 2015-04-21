@@ -12,7 +12,7 @@ using System.IO;
 
 namespace FabSampleForms.Droid
 {
-	public class FloatingActionButtonViewRenderer : ViewRenderer<FloatingActionButtonView, FrameLayout>, IScrollDirectorListener, AbsListView.IOnScrollListener
+	public class FloatingActionButtonViewRenderer : ViewRenderer<FloatingActionButtonView, FrameLayout>
 	{
 		private const int MARGIN_DIPS = 16;
 		private const int FAB_HEIGHT_NORMAL = 56;
@@ -68,8 +68,6 @@ namespace FabSampleForms.Droid
 			fab.HasShadow = Element.HasShadow;
 			fab.Click += Fab_Click;
 
-//			AttachToListView(Element.List);
-
 			var frame = new FrameLayout(context);
 			frame.RemoveAllViews();
 			frame.AddView(fab);
@@ -85,37 +83,6 @@ namespace FabSampleForms.Droid
 		public void Hide(bool animate = true)
 		{
 			fab.Hide(animate);
-		}
-
-		public void AttachToListView(Xamarin.Forms.ListView listView)
-		{
-			if(listView == null) return;
-			var nativeRenderer = RendererFactory.GetRenderer(listView) as ListViewRenderer;
-			var nativeListView = nativeRenderer.Control;
-			if (nativeListView != null)
-			{
-				fab.AttachToListView(nativeListView, this, this);
-			}
-		}
-
-		public void OnScrollDown()
-		{
-			Console.WriteLine("ListViewFragment: OnScrollDown");
-		}
-
-		public void OnScrollUp()
-		{
-			Console.WriteLine("ListViewFragment: OnScrollUp");
-		}
-
-		public void OnScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount)
-		{
-			Console.WriteLine("ListViewFragment: OnScroll");
-		}
-
-		public void OnScrollStateChanged(AbsListView view, ScrollState scrollState)
-		{
-			Console.WriteLine("ListViewFragment: OnScrollChanged");
 		}
 
 		void HandlePropertyChanged (object sender, System.ComponentModel.PropertyChangedEventArgs e)
@@ -146,10 +113,6 @@ namespace FabSampleForms.Droid
 			else if (e.PropertyName == FloatingActionButtonView.HasShadowProperty.PropertyName) 
 			{
 				fab.HasShadow = Element.HasShadow;
-			}
-			else if (e.PropertyName == FloatingActionButtonView.ListProperty.PropertyName) 
-			{
-				AttachToListView(Element.List);
 			}
 		}
 
