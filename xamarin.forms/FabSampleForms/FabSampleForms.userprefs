@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="Droid/FabSampleForms.Droid.csproj" GitUserInfo="UsingGIT">
+﻿<Properties StartupItem="Droid/FabSampleForms.Droid.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="Android.Nexus_5_API21" />
   <MonoDevelop.Ide.Workbench ActiveDocument="FabSampleForms/MainPage.cs">
     <Files>
