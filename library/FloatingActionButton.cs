@@ -16,6 +16,7 @@ using Android.Graphics;
 using Android.Graphics.Drawables;
 using Android.Graphics.Drawables.Shapes;
 using Android.OS;
+using Android.Runtime;
 using Android.Support.V7.Widget;
 using Android.Util;
 using Android.Views;
@@ -30,7 +31,7 @@ namespace com.refractored.fab
     Normal,
     Mini
   }
-
+    [Register("com.refractored.fab.FloatingActionButton")]
   public class FloatingActionButton : ImageButton, ViewTreeObserver.IOnPreDrawListener
   {
     private const int TranslateDurationMillis = 200;
