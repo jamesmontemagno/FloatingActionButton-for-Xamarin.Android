@@ -33,14 +33,13 @@ namespace FabSample
 			global::com.refractored.fab.Resource.Attribute.fab_shadow = global::FabSample.Resource.Attribute.fab_shadow;
 			global::com.refractored.fab.Resource.Attribute.fab_size = global::FabSample.Resource.Attribute.fab_size;
 			global::com.refractored.fab.Resource.Color.fab_material_blue_500 = global::FabSample.Resource.Color.fab_material_blue_500;
-			global::com.refractored.fab.Resource.Color.fab_material_blue_600 = global::FabSample.Resource.Color.fab_material_blue_600;
 			global::com.refractored.fab.Resource.Dimension.fab_elevation_lollipop = global::FabSample.Resource.Dimension.fab_elevation_lollipop;
 			global::com.refractored.fab.Resource.Dimension.fab_scroll_threshold = global::FabSample.Resource.Dimension.fab_scroll_threshold;
 			global::com.refractored.fab.Resource.Dimension.fab_shadow_size = global::FabSample.Resource.Dimension.fab_shadow_size;
 			global::com.refractored.fab.Resource.Dimension.fab_size_mini = global::FabSample.Resource.Dimension.fab_size_mini;
 			global::com.refractored.fab.Resource.Dimension.fab_size_normal = global::FabSample.Resource.Dimension.fab_size_normal;
-			global::com.refractored.fab.Resource.Drawable.shadow = global::FabSample.Resource.Drawable.shadow;
-			global::com.refractored.fab.Resource.Drawable.shadow_mini = global::FabSample.Resource.Drawable.shadow_mini;
+			global::com.refractored.fab.Resource.Drawable.fab_shadow = global::FabSample.Resource.Drawable.fab_shadow;
+			global::com.refractored.fab.Resource.Drawable.fab_shadow_mini = global::FabSample.Resource.Drawable.fab_shadow_mini;
 			global::com.refractored.fab.Resource.Id.mini = global::FabSample.Resource.Id.mini;
 			global::com.refractored.fab.Resource.Id.normal = global::FabSample.Resource.Id.normal;
 			global::com.refractored.fab.Resource.Styleable.FloatingActionButton = global::FabSample.Resource.Styleable.FloatingActionButton;
@@ -815,9 +814,6 @@ namespace FabSample
 			// aapt resource value: 0x7f060000
 			public const int primary = 2131099648;
 			
-			// aapt resource value: 0x7f060001
-			public const int primary_dark = 2131099649;
-			
 			// aapt resource value: 0x7f060026
 			public const int primary_dark_material_dark = 2131099686;
 			
@@ -829,6 +825,9 @@ namespace FabSample
 			
 			// aapt resource value: 0x7f060029
 			public const int primary_material_light = 2131099689;
+			
+			// aapt resource value: 0x7f060001
+			public const int primary_pressed = 2131099649;
 			
 			// aapt resource value: 0x7f06002a
 			public const int primary_text_default_material_dark = 2131099690;
