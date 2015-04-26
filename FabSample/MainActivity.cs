@@ -15,7 +15,7 @@ using RecyclerView = Android.Support.V7.Widget.RecyclerView;
 namespace FabSample
 {
   [Activity(Label = "FabSample", MainLauncher = true, Icon = "@drawable/ic_launcher")]
-  public class MainActivity : ActionBarActivity, ActionBar.ITabListener
+  public class MainActivity : AppCompatActivity, ActionBar.ITabListener, IDialogInterfaceOnClickListener
   {
     int count = 1;
 
@@ -86,16 +86,18 @@ namespace FabSample
       {
         var text = (TextView)LayoutInflater.Inflate(Resource.Layout.about_view, null);
         text.TextFormatted = (Html.FromHtml(GetString(Resource.String.about_body)));
-        new AlertDialog.Builder(this)
+        new Android.Support.V7.App.AlertDialog.Builder(this)
         .SetTitle(Resource.String.about)
         .SetView(text)
         .SetInverseBackgroundForced(true)
-        .SetPositiveButton(Android.Resource.String.Ok, (sender, args) =>
-        {
-          ((IDialogInterface)sender).Dismiss();
-        }).Create().Show();
+        .SetPositiveButton(Android.Resource.String.Ok, this).Create().Show();
       }
       return base.OnOptionsItemSelected(item);
+    }
+
+    public void OnClick(IDialogInterface dialog, int which)
+    {
+      dialog.Dismiss();
     }
   }
 

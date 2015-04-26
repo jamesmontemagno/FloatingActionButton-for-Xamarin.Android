@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
        <id>Refractored.FloatingActionButton</id>
-       <version>1.3.0</version>
+       <version>1.3.1-pre1</version>
        <title>Floating Action Button for Xamarin.Android</title>
        <authors>James Montemagno</authors>
        <owners>James Montemagno</owners>
@@ -20,7 +20,7 @@
        <summary>Android floating action button which reacts on scrolling events. Becomes visible when an attached target is scrolled up and invisible when scrolled down. See Project Site for Sample.</summary>
        <tags>xamarin, xamarin.android, android, fab, floating action butto, monodroid</tags>
        <dependencies>
-         <dependency id="Xamarin.Android.Support.v7.RecyclerView" version="22.0.0.0" />
+         <dependency id="Xamarin.Android.Support.v7.RecyclerView" version="22.1.0.0-beta1" />
        </dependencies>
    </metadata>
    <files>
