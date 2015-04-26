@@ -1,16 +1,31 @@
 ﻿using Xamarin.Forms;
 using System.Threading.Tasks;
+using System.Collections.Generic;
+using System.Collections;
 
 namespace FabSampleForms
 {
 	public class MainPage : ContentPage
 	{
 		private readonly FloatingActionButtonView fab;
+		private readonly ListView list;
+		private int appearingListItemIndex = 0;
 
 		public MainPage()
 		{
 			Title = "Fab Sample XF";
 			BackgroundColor = Color.White;
+
+			var data = new List<string>();
+			for(var i = 1; i <= 100; i++)
+			{
+				data.Add(i.ToString());
+			}
+
+			list = new ListView {
+				VerticalOptions = LayoutOptions.FillAndExpand,
+				ItemsSource = data,
+			};
 
 			fab = new FloatingActionButtonView() {
 				ImageName = "ic_add.png",
@@ -25,19 +40,14 @@ namespace FabSampleForms
 					fab.Hide();
 					await Task.Delay(1500);
 					fab.Show();
-				} 
+				},
 			};
 
 			// Main page layout
 			var pageLayout = new StackLayout {
 				Children = 
 				{
-					new Label {
-						VerticalOptions = LayoutOptions.CenterAndExpand,
-						XAlign = TextAlignment.Center,
-						TextColor = Color.Black,
-						Text = "Welcome to Xamarin Forms!" 
-					}
+					list
 				}};
 
 			var absolute = new AbsoluteLayout() { 
@@ -56,6 +66,54 @@ namespace FabSampleForms
 			absolute.Children.Add(fab);
 
 			Content = absolute;
+		}
+
+		protected override void OnAppearing()
+		{
+			base.OnAppearing();
+			list.ItemAppearing += List_ItemAppearing;
+			list.ItemDisappearing += List_ItemDisappearing;
+		}
+
+		protected override void OnDisappearing()
+		{
+			base.OnDisappearing();
+			list.ItemAppearing -= List_ItemAppearing;
+			list.ItemDisappearing -= List_ItemDisappearing;
+		}
+
+		async void List_ItemDisappearing (object sender, ItemVisibilityEventArgs e)
+		{
+			await Task.Run(() =>
+			{
+				var items = list.ItemsSource as IList;
+				if(items != null)
+				{
+					var index = items.IndexOf(e.Item);
+					if (index < appearingListItemIndex)
+					{
+						Device.BeginInvokeOnMainThread(() => fab.Hide());
+					}
+					appearingListItemIndex = index;
+				}
+			});
+		}
+
+		async void List_ItemAppearing (object sender, ItemVisibilityEventArgs e)
+		{
+			await Task.Run(() =>
+			{
+				var items = list.ItemsSource as IList;
+				if(items != null)
+				{
+					var index = items.IndexOf(e.Item);
+					if (index < appearingListItemIndex)
+					{
+						Device.BeginInvokeOnMainThread(() => fab.Show());
+					}
+					appearingListItemIndex = index;
+				}
+			});
 		}
 	}
 }

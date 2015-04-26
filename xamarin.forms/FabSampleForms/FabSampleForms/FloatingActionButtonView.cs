@@ -48,11 +48,11 @@ namespace FabSampleForms
 		}
 
 		public delegate void ShowHideDelegate(bool animate = true);
+		public delegate void AttachToListViewDelegate(ListView listView);
 
 		public ShowHideDelegate Show { get; set; }
 		public ShowHideDelegate Hide { get; set; }
 		public Action<object, EventArgs> Clicked { get; set; }
-
 	}
 }
 
