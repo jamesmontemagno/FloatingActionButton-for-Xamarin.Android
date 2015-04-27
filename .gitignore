@@ -38,6 +38,7 @@ obj/
 [Pp]ackages/
 Ankh.NoLoad
 Components/
+.nuget/
 
 #Tooling
 _ReSharper*/

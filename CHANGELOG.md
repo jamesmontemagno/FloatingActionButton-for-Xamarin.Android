@@ -1,5 +1,8 @@
 Change Log
 ==========
+Version 1.3.1 (27-04-2015)
+* Update to App Compat 22.1.1 NuGets
+
 Version 1.3.0 (08-04-2015)
 * Finalize 1.3.0 with v22 Support Libraries
 
