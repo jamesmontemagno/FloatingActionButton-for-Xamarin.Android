@@ -7,4 +7,7 @@
         Floating Action Button, a library port by <a href="http://twitter.com/jamesmontemagno">James Montemagno</a>.<br/>
         <a href=\'https://github.com/jamesmontemagno/FloatingActionButton-for-Xamarin.Android\'>https://github.com/jamesmontemagno/FloatingActionButton-for-Xamarin.Android</a>
     ]]></string>
+    <!-- SVG definitions, here for reuse -->
+    <string name="ic_done_all">m35.93164,13.41406l-2.83,-2.83l-12.68,12.69l2.83,2.83l12.68,-12.69zm8.49,-2.83l-21.18,21.17l-8.34,-8.34l-2.83,2.83l11.17,11.17l24,-24l-2.82,-2.83zm-43.66,15.66l11.17,11.17l2.83,-2.83l-11.17,-11.17l-2.83,2.83z</string>
+    <string name="ic_done">m30.29297,24.62671l-2.83,-2.83l-12.68,12.69l2.83,2.83l12.68,-12.69zm8.49,-14.04265l-21.18,21.17l-8.34,-8.34l-2.83,2.83l11.17,11.17l24,-24l-2.82,-2.83zm-32.38493,15.61453l11.17,11.17l2.83,-2.83l-11.17,-11.16999l-2.83,2.83z</string>
 </resources>

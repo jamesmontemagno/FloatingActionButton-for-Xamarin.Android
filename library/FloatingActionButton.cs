@@ -200,6 +200,11 @@ namespace com.refractored.fab
       Toggle (false, animate, false);
     }
 
+	public FloatingActionButton(IntPtr handle, Android.Runtime.JniHandleOwnership transfer)
+		: base(handle, transfer)
+	{
+	}
+
     public FloatingActionButton (Context context)
       : this (context, null)
     {

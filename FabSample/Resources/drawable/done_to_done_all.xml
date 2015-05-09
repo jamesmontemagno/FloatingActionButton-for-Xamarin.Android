@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+	android:drawable="@drawable/ic_done_all" >
+	<target
+		android:name="rotationGroup"
+		android:animation="@anim/rotation" />
+	<target
+		android:name="rotationGroup"
+		android:animation="@anim/shrink_expand" />
+	<target
+		android:name="ic_done_all"
+		android:animation="@anim/anim_ic_done_to_ic_done_all" />
+	
+</animated-vector>
