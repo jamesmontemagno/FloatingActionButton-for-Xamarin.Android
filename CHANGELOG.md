@@ -1,5 +1,9 @@
 Change Log
 ==========
+Version 1.3.4 (10-05-2015)
+* Merge in fix for missing constructor
+* Now allows fancy Lollipop Animation State Drawables
+
 Version 1.3.3 (02-05-2015)
 * Update to AppCompat 22.1.1.1 NuGets
 
