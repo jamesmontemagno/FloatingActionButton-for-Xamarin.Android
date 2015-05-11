@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android"
+		android:constantSize="true">
+
+	
+	<item
+			android:drawable="@drawable/ic_done_all"
+			android:state_last="true"
+			android:id="@+id/fab_second_state" />
+
+	<item
+			android:drawable="@drawable/ic_done"
+			android:id="@+id/fab_first_state" />
+
+
+	<transition
+		android:fromId="@id/fab_first_state"
+		android:toId="@id/fab_second_state"
+		android:drawable="@drawable/done_to_done_all" />
+
+
+	<transition
+		android:fromId="@id/fab_second_state"
+		android:toId="@id/fab_first_state"
+		android:drawable="@drawable/done_all_to_done" />
+
+</animated-selector>
