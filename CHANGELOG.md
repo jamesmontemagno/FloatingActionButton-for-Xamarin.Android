@@ -1,5 +1,8 @@
 Change Log
 ==========
+Version 1.4.0
+* Compile againt 23.0.1.3 NuGets of AppCompat
+
 Version 1.3.4 (10-05-2015)
 * Merge in fix for missing constructor
 * Now allows fancy Lollipop Animation State Drawables

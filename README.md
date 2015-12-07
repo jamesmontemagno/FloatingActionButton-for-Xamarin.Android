@@ -2,8 +2,6 @@
 
 ** This library has now been deprecated by the new Android Support Design Library. Please see the full component for a sample: https://components.xamarin.com/view/xamandroidsupportdesign**
 
-**This library requires AppCompat v21+**
-
 Ported from: https://github.com/makovkastar/FloatingActionButton
 
 ### Description
