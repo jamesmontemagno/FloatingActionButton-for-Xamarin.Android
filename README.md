@@ -1,6 +1,6 @@
 # Floating Action Button for Xamarin.Android
 
-** This library has now been deprecated by the new Android Support Design Library. Please see the full component for a sample: https://components.xamarin.com/view/xamandroidsupportdesign**
+** This library has now been deprecated by the new Android Support Design Library. Please see the full component for a sample: https://components.xamarin.com/view/xamandroidsupportdesign **
 
 Ported from: https://github.com/makovkastar/FloatingActionButton
 
