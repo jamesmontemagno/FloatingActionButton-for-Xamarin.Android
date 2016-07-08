@@ -122,7 +122,7 @@ namespace FabSampleForms.Droid
 			{
 				try
 				{
-					var drawableNameWithoutExtension = Path.GetFileNameWithoutExtension(imageName);
+					var drawableNameWithoutExtension = Path.GetFileNameWithoutExtension(imageName).ToLower();
 					var resources = context.Resources;
 					var imageResourceName = resources.GetIdentifier(drawableNameWithoutExtension, "drawable", context.PackageName);
 					fab.SetImageBitmap(Android.Graphics.BitmapFactory.DecodeResource(context.Resources, imageResourceName));
