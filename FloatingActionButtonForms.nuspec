@@ -29,6 +29,6 @@
    <files>
 
      <!--Xamarin.Android-->
-     <file src="FabControl.Droid\bin\Release\Refractored.FloatingActionButtonControl.*" target="lib\MonoAndroid10" ></file>
+     <file src="FabControl.Droid\bin\Release\Refractored.FabControl.*" target="lib\MonoAndroid10" ></file>
    </files>
 </package>
