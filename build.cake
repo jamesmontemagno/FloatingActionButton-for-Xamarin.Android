@@ -64,14 +64,14 @@ Task ("NuGet")
     if(!DirectoryExists("./Build/nuget/"))
         CreateDirectory("./Build/nuget");
         
-	NuGetPack ("./../FloatingActionButton.nuspec", new NuGetPackSettings { 
+	NuGetPack ("./FloatingActionButton.nuspec", new NuGetPackSettings { 
 		Version = version,
 		Verbosity = NuGetVerbosity.Detailed,
 		OutputDirectory = "./Build/nuget/",
 		BasePath = "./",
 		ToolPath = "./tools/nuget3.exe"
 	});	
-	NuGetPack ("./../FloatingActionButtonForms.nuspec", new NuGetPackSettings { 
+	NuGetPack ("./FloatingActionButtonForms.nuspec", new NuGetPackSettings { 
 		Version = version,
 		Verbosity = NuGetVerbosity.Detailed,
 		OutputDirectory = "./Build/nuget/",
