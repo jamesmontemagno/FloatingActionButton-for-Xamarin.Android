@@ -1,20 +1,19 @@
 ﻿using System;
 using Android.App;
 using Android.Content;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Android.Support.V7.App;
-using ActionBar =  Android.Support.V7.App.ActionBar;
+using ActionBar = Android.Support.V7.App.ActionBar;
 using Android.Text;
-using com.refractored.fab;
 using Android.Support.V7.Widget;
 using RecyclerView = Android.Support.V7.Widget.RecyclerView;
+using Refractored.Fab;
 
 namespace FabSample
 {
-  [Activity(Label = "FabSample", MainLauncher = true, Icon = "@drawable/ic_launcher")]
+    [Activity(Label = "FabSample", MainLauncher = true, Icon = "@drawable/ic_launcher")]
   public class MainActivity : AppCompatActivity, ActionBar.ITabListener, IDialogInterfaceOnClickListener
   {
     int count = 1;

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
-       <id>Refractored.FloatingActionButton</id>
+       <id>Refractored.FloatingActionButtonForms</id>
        <version>$version$</version>
-       <title>Floating Action Button for Xamarin.Android</title>
+       <title>Floating Action Button for Xamarin.Forms</title>
        <authors>James Montemagno</authors>
        <owners>James Montemagno</owners>
        <licenseUrl>https://github.com/jamesmontemagno/FloatingActionButton-for-Xamarin.Android/blob/master/LICENSE.md</licenseUrl>
@@ -18,16 +18,17 @@
          See change log at: https://github.com/jamesmontemagno/FloatingActionButton-for-Xamarin.Android/blob/master/CHANGELOG.md
        </releaseNotes>
        <summary>Android floating action button which reacts on scrolling events. Becomes visible when an attached target is scrolled up and invisible when scrolled down. See Project Site for Sample.</summary>
-       <tags>xamarin, xamarin.android, android, fab, floating action butto, monodroid</tags>
+       <tags>xamarin, xamarin.android, android, fab, xamarin.forms floating action butto, monodroid</tags>
        <dependencies>
-         <group targetFramework="MonoAndroid70">
-           <dependency id="Xamarin.Android.Support.v7.RecyclerView" version="25.3.1" />
+         <group targetFramework="MonoAndroid10">
+           <dependency id="Refractored.FloatingActionButton" version="$version$" />
+           <dependency id="Xamarin.Forms" version="2.3.5.256-pre6" />
          </group>
        </dependencies>
    </metadata>
    <files>
 
      <!--Xamarin.Android-->
-     <file src="library\bin\Release\Refractored.Fab.*" target="lib\MonoAndroid70" ></file>
+     <file src="FabControl.Droid\bin\Release\Refractored.FloatingActionButtonControl.*" target="lib\MonoAndroid10" ></file>
    </files>
 </package>

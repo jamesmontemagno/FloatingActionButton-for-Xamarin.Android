@@ -1,10 +1,10 @@
 
 
-namespace com.refractored.fab
+namespace Refractored.Fab
 {
-  public interface IScrollDirectorListener
-  {
-    void OnScrollDown();
-    void OnScrollUp();
-  }
+    public interface IScrollDirectorListener
+    {
+        void OnScrollDown();
+        void OnScrollUp();
+    }
 }

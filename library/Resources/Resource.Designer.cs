@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("com.refractored.fab.Resource", IsApplication=false)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("Refractored.Fab.Resource", IsApplication=false)]
 
-namespace com.refractored.fab
+namespace Refractored.Fab
 {
 	
 	
@@ -86,23 +86,29 @@ namespace com.refractored.fab
 		public partial class Dimension
 		{
 			
+			// aapt resource value: 0x7f030007
+			public static int fab_elevation_lollipop = 2130903047;
+			
+			// aapt resource value: 0x7f030006
+			public static int fab_scroll_threshold = 2130903046;
+			
 			// aapt resource value: 0x7f030005
-			public static int fab_elevation_lollipop = 2130903045;
+			public static int fab_shadow_size = 2130903045;
 			
 			// aapt resource value: 0x7f030004
-			public static int fab_scroll_threshold = 2130903044;
+			public static int fab_size_mini = 2130903044;
 			
 			// aapt resource value: 0x7f030003
-			public static int fab_shadow_size = 2130903043;
-			
-			// aapt resource value: 0x7f030002
-			public static int fab_size_mini = 2130903042;
-			
-			// aapt resource value: 0x7f030001
-			public static int fab_size_normal = 2130903041;
+			public static int fab_size_normal = 2130903043;
 			
 			// aapt resource value: 0x7f030000
 			public static int item_touch_helper_max_drag_scroll_per_frame = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public static int item_touch_helper_swipe_escape_max_velocity = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public static int item_touch_helper_swipe_escape_velocity = 2130903042;
 			
 			static Dimension()
 			{
@@ -186,25 +192,29 @@ namespace com.refractored.fab
 			
 			public static int[] RecyclerView = new int[] {
 					16842948,
+					16842993,
 					2130771968,
 					2130771969,
 					2130771970,
 					2130771971};
 			
+			// aapt resource value: 1
+			public static int RecyclerView_android_descendantFocusability = 1;
+			
 			// aapt resource value: 0
 			public static int RecyclerView_android_orientation = 0;
 			
-			// aapt resource value: 1
-			public static int RecyclerView_layoutManager = 1;
-			
-			// aapt resource value: 3
-			public static int RecyclerView_reverseLayout = 3;
-			
 			// aapt resource value: 2
-			public static int RecyclerView_spanCount = 2;
+			public static int RecyclerView_layoutManager = 2;
 			
 			// aapt resource value: 4
-			public static int RecyclerView_stackFromEnd = 4;
+			public static int RecyclerView_reverseLayout = 4;
+			
+			// aapt resource value: 3
+			public static int RecyclerView_spanCount = 3;
+			
+			// aapt resource value: 5
+			public static int RecyclerView_stackFromEnd = 5;
 			
 			static Styleable()
 			{

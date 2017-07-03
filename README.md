@@ -15,7 +15,7 @@ Android floating action button which reacts on scrolling events. Becomes visible
 **1)** Add the NuGet to your Project: https://www.nuget.org/packages/Refractored.FloatingActionButton/
 
 
-**2)** Add the ``com.refractored.fab.FloatingActionButton`` to your layout XML file. The button should be placed in the bottom right corner of the screen. The width and height of the floating action button are hardcoded to **56dp** for the normal and **40dp** for the mini button as specified in the [guidlines].
+**2)** Add the ``Refractored.Fab.FloatingActionButton`` to your layout XML file. The button should be placed in the bottom right corner of the screen. The width and height of the floating action button are hardcoded to **56dp** for the normal and **40dp** for the mini button as specified in the [guidlines].
 
 ```xml
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -28,7 +28,7 @@ Android floating action button which reacts on scrolling events. Becomes visible
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-    <com.refractored.fab.FloatingActionButton
+    <Refractored.Fab.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -117,7 +117,7 @@ Country flag icons used in the sample are taken from www.icondrawer.com
 
 The MIT License (MIT)
 
-Copyright (c) 2015 James Montemagno / Refractored LLC
+Copyright (c) 2017 James Montemagno / Refractored LLC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

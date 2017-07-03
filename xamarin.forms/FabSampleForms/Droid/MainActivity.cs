@@ -18,8 +18,9 @@ namespace FabSampleForms.Droid
 			base.OnCreate(bundle);
 
 			global::Xamarin.Forms.Forms.Init(this, bundle);
+            Refractored.FabControl.Droid.FloatingActionButtonViewRenderer.Init();
 
-			LoadApplication(new App());
+            LoadApplication(new App());
 		}
 	}
 }

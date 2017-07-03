@@ -3,8 +3,8 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent">
 
-    <com.refractored.fab.ObservableScrollView
-        android:id="@+id/scroll_view"
+  <Refractored.Fab.ObservableScrollView
+      android:id="@+id/scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -15,9 +15,9 @@
             android:orientation="vertical"
             android:showDividers="middle"
             android:divider="@drawable/divider"/>
-    </com.refractored.fab.ObservableScrollView>
+    </Refractored.Fab.ObservableScrollView>
 
-  <com.refractored.fab.FloatingActionButton
+  <Refractored.Fab.FloatingActionButton
       android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

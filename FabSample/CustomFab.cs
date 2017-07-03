@@ -14,8 +14,8 @@ using Android.Graphics.Drawables;
 
 namespace FabSample
 {
-	[Register("com.refractored.fab.CustomFloatingActionButton")]
-	public class CustomFAB : com.refractored.fab.FloatingActionButton
+	[Register("FabSample.CustomFAB")]
+	public class CustomFAB : Refractored.Fab.FloatingActionButton
 	{
 		
 

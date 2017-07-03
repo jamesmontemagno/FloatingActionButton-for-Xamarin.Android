@@ -12,7 +12,7 @@
 				android:cacheColorHint="@android:color/transparent"
 				android:headerDividersEnabled="false"/>
 
-	<com.refractored.fab.CustomFloatingActionButton
+  <FabSample.CustomFAB
 			android:id="@+id/fab"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
