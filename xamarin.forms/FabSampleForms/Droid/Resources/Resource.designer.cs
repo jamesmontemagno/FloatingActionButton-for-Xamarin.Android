@@ -767,13 +767,7 @@ namespace FabSampleForms.Droid
 			global::Refractored.FabControl.Droid.Resource.Drawable.abc_textfield_search_material = global::FabSampleForms.Droid.Resource.Drawable.abc_textfield_search_material;
 			global::Refractored.FabControl.Droid.Resource.Drawable.abc_vector_test = global::FabSampleForms.Droid.Resource.Drawable.abc_vector_test;
 			global::Refractored.FabControl.Droid.Resource.Drawable.avd_hide_password = global::FabSampleForms.Droid.Resource.Drawable.avd_hide_password;
-			global::Refractored.FabControl.Droid.Resource.Drawable.avd_hide_password_1 = global::FabSampleForms.Droid.Resource.Drawable.avd_hide_password_1;
-			global::Refractored.FabControl.Droid.Resource.Drawable.avd_hide_password_2 = global::FabSampleForms.Droid.Resource.Drawable.avd_hide_password_2;
-			global::Refractored.FabControl.Droid.Resource.Drawable.avd_hide_password_3 = global::FabSampleForms.Droid.Resource.Drawable.avd_hide_password_3;
 			global::Refractored.FabControl.Droid.Resource.Drawable.avd_show_password = global::FabSampleForms.Droid.Resource.Drawable.avd_show_password;
-			global::Refractored.FabControl.Droid.Resource.Drawable.avd_show_password_1 = global::FabSampleForms.Droid.Resource.Drawable.avd_show_password_1;
-			global::Refractored.FabControl.Droid.Resource.Drawable.avd_show_password_2 = global::FabSampleForms.Droid.Resource.Drawable.avd_show_password_2;
-			global::Refractored.FabControl.Droid.Resource.Drawable.avd_show_password_3 = global::FabSampleForms.Droid.Resource.Drawable.avd_show_password_3;
 			global::Refractored.FabControl.Droid.Resource.Drawable.design_bottom_navigation_item_background = global::FabSampleForms.Droid.Resource.Drawable.design_bottom_navigation_item_background;
 			global::Refractored.FabControl.Droid.Resource.Drawable.design_fab_background = global::FabSampleForms.Droid.Resource.Drawable.design_fab_background;
 			global::Refractored.FabControl.Droid.Resource.Drawable.design_ic_visibility = global::FabSampleForms.Droid.Resource.Drawable.design_ic_visibility;

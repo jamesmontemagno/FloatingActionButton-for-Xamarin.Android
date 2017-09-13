@@ -1,4 +1,4 @@
-# Floating Action Button for Xamarin.Android
+# Floating Action Button for Xamarin.Android and Xamarin.Forms
 
 ** This library has now been deprecated by the new Android Support Design Library. Please see the full component for a sample: https://components.xamarin.com/view/xamandroidsupportdesign **
 
@@ -10,7 +10,7 @@ Android floating action button which reacts on scrolling events. Becomes visible
 
 ![Demo](art/demo.gif)
 
-### Integration
+### Integration Xamarin.Android
 
 **1)** Add the NuGet to your Project: https://www.nuget.org/packages/Refractored.FloatingActionButton/
 
@@ -107,6 +107,8 @@ Check the sample project to see how to use custom listeners if you need to track
 
 **5)** Set an icon for the ``FloatingActionButton`` using ``android:src`` xml attribute. Use drawables of size **24dp** as specified by [guidlines]. Icons of desired size can be generated with [Android Asset Studio].
 
+### Integration Xamarin.Forms
+See sample app for integration
 
 ### Links
 

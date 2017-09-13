@@ -44,6 +44,15 @@
     <Reference Include="FormsViewGroup, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\library\packages\Xamarin.Forms.2.3.5.256-pre6\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
     </Reference>
+    <Reference Include="Refractored.Fab, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\library\packages\Refractored.FloatingActionButton.2.0.0-beta4\lib\MonoAndroid70\Refractored.Fab.dll</HintPath>
+    </Reference>
+    <Reference Include="Refractored.FabControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\library\packages\Refractored.FloatingActionButtonForms.2.0.0-beta4\lib\MonoAndroid10\Refractored.FabControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Refractored.FabControl.Droid, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\library\packages\Refractored.FloatingActionButtonForms.2.0.0-beta4\lib\MonoAndroid10\Refractored.FabControl.Droid.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -134,20 +143,6 @@
     <AndroidResource Include="Resources\drawable-hdpi\ic_add.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_add.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_add.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\FabControl.Droid\FabControl.Droid.csproj">
-      <Project>{ee92e8c3-097c-413c-84a8-4fdf26d64f5e}</Project>
-      <Name>FabControl.Droid</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\FabControl\FabControl.csproj">
-      <Project>{31f0cf92-dd58-4f32-b9f1-9f21dcb1fb9b}</Project>
-      <Name>FabControl</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\library\FloatingActionButton.csproj">
-      <Project>{fb2f1331-01e2-42cf-b7de-7b63ea1b046c}</Project>
-      <Name>FloatingActionButton</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.0.0.6490\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.0.0.6490\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
