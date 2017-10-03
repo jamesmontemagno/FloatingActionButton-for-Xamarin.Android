@@ -149,19 +149,27 @@ if (!(Test-Path $NUGET_EXE)) {
 }
 
 $configFiles = Get-ChildItem . *.csproj -rec
-$versionString = "<AssemblyVersion>" + $env:APPVEYOR_BUILD_VERSION + "</AssemblyVersion>"
-$fileVersionString = "<AssemblyFileVersion>" + $env:APPVEYOR_BUILD_VERSION + "</AssemblyFileVersion>"
+$assemblyVersionString = "<AssemblyVersion>" + $env:APPVEYOR_BUILD_VERSION + "</AssemblyVersion>"
+$assemblyFileVersionString = "<AssemblyFileVersion>" + $env:APPVEYOR_BUILD_VERSION + "</AssemblyFileVersion>"
+$versionString = "<Version>" + $env:APPVEYOR_BUILD_VERSION + "</Version>"
 foreach ($file in $configFiles)
 {
     (Get-Content $file.PSPath) |
-    Foreach-Object { $_ -replace "<AssemblyVersion>1.0.0.0</AssemblyVersion>", $versionString  } |
+    Foreach-Object { $_ -replace "<AssemblyVersion>1.0.0.0</AssemblyVersion>", $assemblyVersionString  } |
     Set-Content $file.PSPath
 }
 
 foreach ($file in $configFiles)
 {
     (Get-Content $file.PSPath) |
-    Foreach-Object { $_ -replace "<AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>", $fileVersionString  } |
+    Foreach-Object { $_ -replace "<AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>", $assemblyFileVersionString  } |
+    Set-Content $file.PSPath
+}
+
+foreach ($file in $configFiles)
+{
+    (Get-Content $file.PSPath) |
+    Foreach-Object { $_ -replace "<Version>1.0.0.0</Version>", $versionString  } |
     Set-Content $file.PSPath
 }
 
