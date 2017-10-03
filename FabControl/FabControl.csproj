@@ -4,6 +4,8 @@
     <TargetFramework>netstandard1.0</TargetFramework>
     <AssemblyName>Refractored.FabControl</AssemblyName>
     <RootNamespace>Refractored.FabControl</RootNamespace>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
