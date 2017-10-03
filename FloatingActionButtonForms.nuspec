@@ -19,14 +19,41 @@
        </releaseNotes>
        <summary>Android floating action button which reacts on scrolling events. Becomes visible when an attached target is scrolled up and invisible when scrolled down. See Project Site for Sample.</summary>
        <tags>xamarin, xamarin.android, android, fab, xamarin.forms floating action butto, monodroid</tags>
-       <dependencies>
-         <group targetFramework="MonoAndroid10">
-           <dependency id="Refractored.FloatingActionButton" version="$version$" />
-           <dependency id="Xamarin.Forms" version="2.4.0.282" />
-         </group>
-       </dependencies>
+     <dependencies>
+       <group targetFramework="net">
+       </group>
+       <group targetFramework="win">
+       </group>
+       <group targetFramework="wp">
+       </group>
+       <group targetFramework="wpa">
+       </group>
+       <group targetFramework="netstandard1.0">
+         <dependency id="NETStandard.Library" version="1.6.1" />
+       </group>
+       <group targetFramework="MonoAndroid10">
+         <dependency id="Refractored.FloatingActionButton" version="$version$" />
+         <dependency id="Xamarin.Forms" version="2.4.0.282" />
+       </group>
+       <group targetFramework="Xamarin.iOS10">
+       </group>
+       <group targetFramework="Xamarin.Mac20">
+       </group>
+       <group targetFramework="portable-net45+win+wpa81+wp80">
+       </group>
+       <group targetFramework="uap">
+       </group>
+       <group targetFramework="dotnet">
+       </group>
+       <group targetFramework="xamarintvos">
+       </group>
+       <group targetFramework="xamarinwatchos">
+       </group>
+     </dependencies>  
    </metadata>
    <files>
+
+     <file src="FabControl\bin\Release\netstandard1.0\Refractored.FabControl.*" target="lib\netstandard1.0" />
 
      <!--Xamarin.Android-->
      <file src="FabControl.Droid\bin\Release\Refractored.FabControl.*" target="lib\MonoAndroid10" ></file>

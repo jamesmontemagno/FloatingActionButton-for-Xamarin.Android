@@ -53,3 +53,6 @@ _ReSharper*/
 
 # Office Temp Files
 ~$*
+library/.vs/FloatingActionButton/v15/sqlite3/storage.ide
+library/.vs/FloatingActionButton/v15/sqlite3/storage.ide
+*.ide
