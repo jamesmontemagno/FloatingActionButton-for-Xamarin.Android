@@ -148,6 +148,23 @@ if (!(Test-Path $NUGET_EXE)) {
     }
 }
 
+$configFiles = Get-ChildItem . *.csproj -rec
+$versionString = "<AssemblyVersion>" + $env:APPVEYOR_BUILD_VERSION + "</AssemblyVersion>"
+$fileVersionString = "<AssemblyFileVersion>" + $env:APPVEYOR_BUILD_VERSION + "</AssemblyFileVersion>"
+foreach ($file in $configFiles)
+{
+    (Get-Content $file.PSPath) |
+    Foreach-Object { $_ -replace "<AssemblyVersion>1.0.0.0</AssemblyVersion>", $versionString  } |
+    Set-Content $file.PSPath
+}
+
+foreach ($file in $configFiles)
+{
+    (Get-Content $file.PSPath) |
+    Foreach-Object { $_ -replace "<AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>", $versionString  } |
+    Set-Content $file.PSPath
+}
+
 # Save nuget.exe path to environment to be available to child processed
 $ENV:NUGET_EXE = $NUGET_EXE
 

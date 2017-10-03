@@ -5,7 +5,7 @@
     <AssemblyName>Refractored.FabControl</AssemblyName>
     <RootNamespace>Refractored.FabControl</RootNamespace>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
