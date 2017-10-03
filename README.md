@@ -110,6 +110,35 @@ Check the sample project to see how to use custom listeners if you need to track
 ### Integration Xamarin.Forms
 See sample app for integration
 
+XAML Example:
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Microsoft.Mvpui.ContributionsPage"
+             xmlns:fab="clr-namespace:Refractored.FabControl;assembly=Refractored.FabControl">
+
+    <ContentPage.Content>
+		<AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+				<ListView 
+						  AbsoluteLayout.LayoutFlags="All"
+						  AbsoluteLayout.LayoutBounds="0,0,1,1">
+
+			</ListView>
+			<fab:FloatingActionButtonView
+				ImageName="toolbar_add.png"
+				ColorNormal="{StaticResource Primary}"
+				ColorPressed="{StaticResource PrimaryDark}"
+				ColorRipple="{StaticResource PrimaryDark}"
+				x:Name="FloatingActionButtonAdd"
+				IsVisible="False"
+				AbsoluteLayout.LayoutFlags="PositionProportional"
+				AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"/>
+		</AbsoluteLayout>
+	</ContentPage.Content>
+</ContentPage>
+```
+
 ### Links
 
 Country flag icons used in the sample are taken from www.icondrawer.com
