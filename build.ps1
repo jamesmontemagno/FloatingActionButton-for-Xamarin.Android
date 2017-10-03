@@ -161,7 +161,7 @@ foreach ($file in $configFiles)
 foreach ($file in $configFiles)
 {
     (Get-Content $file.PSPath) |
-    Foreach-Object { $_ -replace "<AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>", $versionString  } |
+    Foreach-Object { $_ -replace "<AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>", $fileVersionString  } |
     Set-Content $file.PSPath
 }
 
