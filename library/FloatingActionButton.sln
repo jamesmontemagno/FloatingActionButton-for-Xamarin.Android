@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloatingActionButton", "FloatingActionButton.csproj", "{FB2F1331-01E2-42CF-B7DE-7B63EA1B046C}"
 EndProject
@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\appveyor.yml = ..\appveyor.yml
 		..\bootstrapper.ps1 = ..\bootstrapper.ps1
 		..\build.cake = ..\build.cake
+		..\build.ps1 = ..\build.ps1
+		..\CHANGELOG.md = ..\CHANGELOG.md
 		..\FloatingActionButton.nuspec = ..\FloatingActionButton.nuspec
 		..\FloatingActionButtonForms.nuspec = ..\FloatingActionButtonForms.nuspec
 		..\README.md = ..\README.md
@@ -59,5 +61,8 @@ Global
 		{31F0CF92-DD58-4F32-B9F1-9F21DCB1FB9B} = {11A7638E-23C3-4FF5-8B2C-88C2B760F5B6}
 		{EE92E8C3-097C-413C-84A8-4FDF26D64F5E} = {11A7638E-23C3-4FF5-8B2C-88C2B760F5B6}
 		{0C967533-B6D7-43CB-AA6A-A6FB043776EF} = {11A7638E-23C3-4FF5-8B2C-88C2B760F5B6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {832732BA-7123-4464-BA9D-84AB97677EF4}
 	EndGlobalSection
 EndGlobal

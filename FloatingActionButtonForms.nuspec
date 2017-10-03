@@ -22,7 +22,7 @@
        <dependencies>
          <group targetFramework="MonoAndroid10">
            <dependency id="Refractored.FloatingActionButton" version="$version$" />
-           <dependency id="Xamarin.Forms" version="2.3.5.256-pre6" />
+           <dependency id="Xamarin.Forms" version="2.4.0.282" />
          </group>
        </dependencies>
    </metadata>
