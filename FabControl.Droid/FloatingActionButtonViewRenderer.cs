@@ -163,10 +163,11 @@ namespace Refractored.FabControl.Droid
 
         void Fab_Click(object sender, EventArgs e)
         {
-            var clicked = Element.Clicked;
-            if (Element != null && clicked != null)
+            Element?.Clicked?.Invoke(sender, e);
+
+            if (Element?.Command?.CanExecute(null) ?? false)
             {
-                clicked(sender, e);
+                Element.Command.Execute(null);
             }
         }
     }
