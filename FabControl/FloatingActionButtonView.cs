@@ -54,6 +54,13 @@ namespace Refractored.FabControl
             set { SetValue(CommandProperty, value); }
         }
 
+        public static readonly BindableProperty CommandParameterProperty = BindableProperty.Create<FloatingActionButtonView, object>(p => p.CommandParameter, null);
+        public object CommandParameter
+        {
+            get { return (object)GetValue(CommandParameterProperty); }
+            set { SetValue(CommandParameterProperty, value); }
+        }
+
         public delegate void ShowHideDelegate(bool animate = true);
         public delegate void AttachToListViewDelegate(ListView listView);
 

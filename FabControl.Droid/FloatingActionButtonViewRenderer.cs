@@ -165,9 +165,9 @@ namespace Refractored.FabControl.Droid
         {
             Element?.Clicked?.Invoke(sender, e);
 
-            if (Element?.Command?.CanExecute(null) ?? false)
+            if (Element?.Command?.CanExecute(Element.CommandParameter) ?? false)
             {
-                Element.Command.Execute(null);
+                Element.Command.Execute(Element.CommandParameter);
             }
         }
     }
