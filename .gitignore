@@ -6,7 +6,7 @@
 [Tt]humbs.db
 *.DS_Store
 APK/
-
+library/.vs
 
 #Visual Studio files
 *.[Oo]bj
