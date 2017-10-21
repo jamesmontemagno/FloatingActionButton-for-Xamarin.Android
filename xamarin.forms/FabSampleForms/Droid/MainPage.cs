@@ -33,7 +33,7 @@ namespace FabSampleForms
             {
                 ImageName = "ic_add.png",
                 ColorNormal = Color.FromHex("ff3498db"),
-                ColorPressed = Color.Black,
+                ColorPressed = Color.FromHex("ff3498db"),
                 ColorRipple = Color.FromHex("ff3498db"),
                 Clicked = async (sender, args) =>
                 {

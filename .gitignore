@@ -7,6 +7,7 @@
 *.DS_Store
 APK/
 
+
 #Visual Studio files
 *.[Oo]bj
 *.user
@@ -54,5 +55,9 @@ _ReSharper*/
 # Office Temp Files
 ~$*
 library/.vs/FloatingActionButton/v15/sqlite3/storage.ide
+library/.vs/FloatingActionButton/v15/sqlite3/storage.ide
+*.ide
+library/.vs/FloatingActionButton/v15/sqlite3/storage.ide
+*.ide
 library/.vs/FloatingActionButton/v15/sqlite3/storage.ide
 *.ide

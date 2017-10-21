@@ -33,6 +33,9 @@ namespace Refractored.FabControl.Droid
         private readonly Android.Content.Context context;
         private readonly FloatingActionButton fab;
 
+        /// <summary>
+        /// Construtor
+        /// </summary>
         public FloatingActionButtonViewRenderer()
         {
             context = Xamarin.Forms.Forms.Context;
@@ -50,6 +53,10 @@ namespace Refractored.FabControl.Droid
             fab.LayoutParameters = lp;
         }
 
+        /// <summary>
+        /// Element Changed
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnElementChanged(ElementChangedEventArgs<FloatingActionButtonView> e)
         {
             base.OnElementChanged(e);
@@ -85,15 +92,21 @@ namespace Refractored.FabControl.Droid
             SetNativeControl(frame);
         }
 
-        public void Show(bool animate = true)
-        {
-            fab.Show(animate);
-        }
+        /// <summary>
+        /// Show
+        /// </summary>
+        /// <param name="animate"></param>
+        public void Show(bool animate = true) => 
+            fab?.Show(animate);
+        
 
-        public void Hide(bool animate = true)
-        {
-            fab.Hide(animate);
-        }
+        /// <summary>
+        /// Hide!
+        /// </summary>
+        /// <param name="animate"></param>
+        public void Hide(bool animate = true) =>
+            fab?.Hide(animate);
+        
 
         void HandlePropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
@@ -165,9 +178,9 @@ namespace Refractored.FabControl.Droid
         {
             Element?.Clicked?.Invoke(sender, e);
 
-            if (Element?.Command?.CanExecute(null) ?? false)
+            if (Element?.Command?.CanExecute(Element?.CommandParameter) ?? false)
             {
-                Element.Command.Execute(null);
+                Element.Command.Execute(Element?.CommandParameter);
             }
         }
     }

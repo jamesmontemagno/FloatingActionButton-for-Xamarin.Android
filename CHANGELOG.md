@@ -1,5 +1,10 @@
 Change Log
 ==========
+Version 2.0.X
+* Add Xamarin.Forms Version
+* Add Command property
+* Compile against 25.X NuGets
+
 Version 1.4.0
 * Compile againt 23.0.1.3 NuGets of AppCompat
 
