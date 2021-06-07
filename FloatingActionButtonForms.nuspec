@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
        <id>Refractored.FloatingActionButtonForms</id>
-       <version>$version$</version>
+       <version>3.0.0-beta</version>
        <title>Floating Action Button for Xamarin.Forms</title>
        <authors>James Montemagno</authors>
        <owners>James Montemagno</owners>
@@ -56,6 +56,6 @@
      <file src="FabControl\bin\Release\netstandard1.0\Refractored.FabControl.*" target="lib\netstandard1.0" />
 
      <!--Xamarin.Android-->
-     <file src="FabControl.Droid\bin\Release\Refractored.FabControl.*" target="lib\MonoAndroid10" ></file>
+     <file src="FabControl.Droid\bin\Release\Refractored.FabControl.*" target="lib\MonoAndroid10.0" ></file>
    </files>
 </package>

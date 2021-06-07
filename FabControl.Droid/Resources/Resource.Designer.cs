@@ -5576,269 +5576,263 @@ namespace Refractored.FabControl.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7F0D0002
-			public static int abc_action_bar_home_description = 2131558402;
-			
-			// aapt resource value: 0x7F0D0003
-			public static int abc_action_bar_up_description = 2131558403;
-			
-			// aapt resource value: 0x7F0D0004
-			public static int abc_action_menu_overflow_description = 2131558404;
-			
-			// aapt resource value: 0x7F0D0005
-			public static int abc_action_mode_done = 2131558405;
-			
-			// aapt resource value: 0x7F0D0007
-			public static int abc_activitychooserview_choose_application = 2131558407;
-			
-			// aapt resource value: 0x7F0D0006
-			public static int abc_activity_chooser_view_see_all = 2131558406;
-			
-			// aapt resource value: 0x7F0D0008
-			public static int abc_capital_off = 2131558408;
-			
-			// aapt resource value: 0x7F0D0009
-			public static int abc_capital_on = 2131558409;
-			
-			// aapt resource value: 0x7F0D000A
-			public static int abc_menu_alt_shortcut_label = 2131558410;
-			
-			// aapt resource value: 0x7F0D000B
-			public static int abc_menu_ctrl_shortcut_label = 2131558411;
-			
-			// aapt resource value: 0x7F0D000C
-			public static int abc_menu_delete_shortcut_label = 2131558412;
-			
-			// aapt resource value: 0x7F0D000D
-			public static int abc_menu_enter_shortcut_label = 2131558413;
-			
-			// aapt resource value: 0x7F0D000E
-			public static int abc_menu_function_shortcut_label = 2131558414;
-			
-			// aapt resource value: 0x7F0D000F
-			public static int abc_menu_meta_shortcut_label = 2131558415;
-			
-			// aapt resource value: 0x7F0D0010
-			public static int abc_menu_shift_shortcut_label = 2131558416;
-			
-			// aapt resource value: 0x7F0D0011
-			public static int abc_menu_space_shortcut_label = 2131558417;
-			
-			// aapt resource value: 0x7F0D0012
-			public static int abc_menu_sym_shortcut_label = 2131558418;
-			
-			// aapt resource value: 0x7F0D0013
-			public static int abc_prepend_shortcut_label = 2131558419;
-			
-			// aapt resource value: 0x7F0D0015
-			public static int abc_searchview_description_clear = 2131558421;
-			
-			// aapt resource value: 0x7F0D0016
-			public static int abc_searchview_description_query = 2131558422;
-			
-			// aapt resource value: 0x7F0D0017
-			public static int abc_searchview_description_search = 2131558423;
-			
-			// aapt resource value: 0x7F0D0018
-			public static int abc_searchview_description_submit = 2131558424;
-			
-			// aapt resource value: 0x7F0D0019
-			public static int abc_searchview_description_voice = 2131558425;
-			
-			// aapt resource value: 0x7F0D0014
-			public static int abc_search_hint = 2131558420;
-			
-			// aapt resource value: 0x7F0D001A
-			public static int abc_shareactionprovider_share_with = 2131558426;
-			
-			// aapt resource value: 0x7F0D001B
-			public static int abc_shareactionprovider_share_with_application = 2131558427;
-			
-			// aapt resource value: 0x7F0D001C
-			public static int abc_toolbar_collapse_description = 2131558428;
-			
-			// aapt resource value: 0x7F0D001D
-			public static int appbar_scrolling_view_behavior = 2131558429;
-			
 			// aapt resource value: 0x7F0D0000
-			public static int ApplicationName = 2131558400;
-			
-			// aapt resource value: 0x7F0D001E
-			public static int bottom_sheet_behavior = 2131558430;
-			
-			// aapt resource value: 0x7F0D001F
-			public static int character_counter_content_description = 2131558431;
-			
-			// aapt resource value: 0x7F0D0020
-			public static int character_counter_overflowed_content_description = 2131558432;
-			
-			// aapt resource value: 0x7F0D0021
-			public static int character_counter_pattern = 2131558433;
-			
-			// aapt resource value: 0x7F0D0022
-			public static int chip_text = 2131558434;
-			
-			// aapt resource value: 0x7F0D0023
-			public static int clear_text_end_icon_content_description = 2131558435;
-			
-			// aapt resource value: 0x7F0D0024
-			public static int copy_toast_msg = 2131558436;
-			
-			// aapt resource value: 0x7F0D0025
-			public static int error_icon_content_description = 2131558437;
-			
-			// aapt resource value: 0x7F0D0026
-			public static int exposed_dropdown_menu_content_description = 2131558438;
-			
-			// aapt resource value: 0x7F0D0027
-			public static int fab_transformation_scrim_behavior = 2131558439;
-			
-			// aapt resource value: 0x7F0D0028
-			public static int fab_transformation_sheet_behavior = 2131558440;
-			
-			// aapt resource value: 0x7F0D0029
-			public static int fallback_menu_item_copy_link = 2131558441;
-			
-			// aapt resource value: 0x7F0D002A
-			public static int fallback_menu_item_open_in_browser = 2131558442;
-			
-			// aapt resource value: 0x7F0D002B
-			public static int fallback_menu_item_share_link = 2131558443;
+			public static int abc_action_bar_home_description = 2131558400;
 			
 			// aapt resource value: 0x7F0D0001
-			public static int Hello = 2131558401;
+			public static int abc_action_bar_up_description = 2131558401;
+			
+			// aapt resource value: 0x7F0D0002
+			public static int abc_action_menu_overflow_description = 2131558402;
+			
+			// aapt resource value: 0x7F0D0003
+			public static int abc_action_mode_done = 2131558403;
+			
+			// aapt resource value: 0x7F0D0005
+			public static int abc_activitychooserview_choose_application = 2131558405;
+			
+			// aapt resource value: 0x7F0D0004
+			public static int abc_activity_chooser_view_see_all = 2131558404;
+			
+			// aapt resource value: 0x7F0D0006
+			public static int abc_capital_off = 2131558406;
+			
+			// aapt resource value: 0x7F0D0007
+			public static int abc_capital_on = 2131558407;
+			
+			// aapt resource value: 0x7F0D0008
+			public static int abc_menu_alt_shortcut_label = 2131558408;
+			
+			// aapt resource value: 0x7F0D0009
+			public static int abc_menu_ctrl_shortcut_label = 2131558409;
+			
+			// aapt resource value: 0x7F0D000A
+			public static int abc_menu_delete_shortcut_label = 2131558410;
+			
+			// aapt resource value: 0x7F0D000B
+			public static int abc_menu_enter_shortcut_label = 2131558411;
+			
+			// aapt resource value: 0x7F0D000C
+			public static int abc_menu_function_shortcut_label = 2131558412;
+			
+			// aapt resource value: 0x7F0D000D
+			public static int abc_menu_meta_shortcut_label = 2131558413;
+			
+			// aapt resource value: 0x7F0D000E
+			public static int abc_menu_shift_shortcut_label = 2131558414;
+			
+			// aapt resource value: 0x7F0D000F
+			public static int abc_menu_space_shortcut_label = 2131558415;
+			
+			// aapt resource value: 0x7F0D0010
+			public static int abc_menu_sym_shortcut_label = 2131558416;
+			
+			// aapt resource value: 0x7F0D0011
+			public static int abc_prepend_shortcut_label = 2131558417;
+			
+			// aapt resource value: 0x7F0D0013
+			public static int abc_searchview_description_clear = 2131558419;
+			
+			// aapt resource value: 0x7F0D0014
+			public static int abc_searchview_description_query = 2131558420;
+			
+			// aapt resource value: 0x7F0D0015
+			public static int abc_searchview_description_search = 2131558421;
+			
+			// aapt resource value: 0x7F0D0016
+			public static int abc_searchview_description_submit = 2131558422;
+			
+			// aapt resource value: 0x7F0D0017
+			public static int abc_searchview_description_voice = 2131558423;
+			
+			// aapt resource value: 0x7F0D0012
+			public static int abc_search_hint = 2131558418;
+			
+			// aapt resource value: 0x7F0D0018
+			public static int abc_shareactionprovider_share_with = 2131558424;
+			
+			// aapt resource value: 0x7F0D0019
+			public static int abc_shareactionprovider_share_with_application = 2131558425;
+			
+			// aapt resource value: 0x7F0D001A
+			public static int abc_toolbar_collapse_description = 2131558426;
+			
+			// aapt resource value: 0x7F0D001B
+			public static int appbar_scrolling_view_behavior = 2131558427;
+			
+			// aapt resource value: 0x7F0D001C
+			public static int bottom_sheet_behavior = 2131558428;
+			
+			// aapt resource value: 0x7F0D001D
+			public static int character_counter_content_description = 2131558429;
+			
+			// aapt resource value: 0x7F0D001E
+			public static int character_counter_overflowed_content_description = 2131558430;
+			
+			// aapt resource value: 0x7F0D001F
+			public static int character_counter_pattern = 2131558431;
+			
+			// aapt resource value: 0x7F0D0020
+			public static int chip_text = 2131558432;
+			
+			// aapt resource value: 0x7F0D0021
+			public static int clear_text_end_icon_content_description = 2131558433;
+			
+			// aapt resource value: 0x7F0D0022
+			public static int copy_toast_msg = 2131558434;
+			
+			// aapt resource value: 0x7F0D0023
+			public static int error_icon_content_description = 2131558435;
+			
+			// aapt resource value: 0x7F0D0024
+			public static int exposed_dropdown_menu_content_description = 2131558436;
+			
+			// aapt resource value: 0x7F0D0025
+			public static int fab_transformation_scrim_behavior = 2131558437;
+			
+			// aapt resource value: 0x7F0D0026
+			public static int fab_transformation_sheet_behavior = 2131558438;
+			
+			// aapt resource value: 0x7F0D0027
+			public static int fallback_menu_item_copy_link = 2131558439;
+			
+			// aapt resource value: 0x7F0D0028
+			public static int fallback_menu_item_open_in_browser = 2131558440;
+			
+			// aapt resource value: 0x7F0D0029
+			public static int fallback_menu_item_share_link = 2131558441;
+			
+			// aapt resource value: 0x7F0D002A
+			public static int hide_bottom_view_on_scroll_behavior = 2131558442;
+			
+			// aapt resource value: 0x7F0D002B
+			public static int icon_content_description = 2131558443;
 			
 			// aapt resource value: 0x7F0D002C
-			public static int hide_bottom_view_on_scroll_behavior = 2131558444;
+			public static int mtrl_badge_numberless_content_description = 2131558444;
 			
 			// aapt resource value: 0x7F0D002D
-			public static int icon_content_description = 2131558445;
+			public static int mtrl_chip_close_icon_content_description = 2131558445;
 			
 			// aapt resource value: 0x7F0D002E
-			public static int mtrl_badge_numberless_content_description = 2131558446;
+			public static int mtrl_exceed_max_badge_number_suffix = 2131558446;
 			
 			// aapt resource value: 0x7F0D002F
-			public static int mtrl_chip_close_icon_content_description = 2131558447;
+			public static int mtrl_picker_a11y_next_month = 2131558447;
 			
 			// aapt resource value: 0x7F0D0030
-			public static int mtrl_exceed_max_badge_number_suffix = 2131558448;
+			public static int mtrl_picker_a11y_prev_month = 2131558448;
 			
 			// aapt resource value: 0x7F0D0031
-			public static int mtrl_picker_a11y_next_month = 2131558449;
+			public static int mtrl_picker_announce_current_selection = 2131558449;
 			
 			// aapt resource value: 0x7F0D0032
-			public static int mtrl_picker_a11y_prev_month = 2131558450;
+			public static int mtrl_picker_cancel = 2131558450;
 			
 			// aapt resource value: 0x7F0D0033
-			public static int mtrl_picker_announce_current_selection = 2131558451;
+			public static int mtrl_picker_confirm = 2131558451;
 			
 			// aapt resource value: 0x7F0D0034
-			public static int mtrl_picker_cancel = 2131558452;
+			public static int mtrl_picker_date_header_selected = 2131558452;
 			
 			// aapt resource value: 0x7F0D0035
-			public static int mtrl_picker_confirm = 2131558453;
+			public static int mtrl_picker_date_header_title = 2131558453;
 			
 			// aapt resource value: 0x7F0D0036
-			public static int mtrl_picker_date_header_selected = 2131558454;
+			public static int mtrl_picker_date_header_unselected = 2131558454;
 			
 			// aapt resource value: 0x7F0D0037
-			public static int mtrl_picker_date_header_title = 2131558455;
+			public static int mtrl_picker_day_of_week_column_header = 2131558455;
 			
 			// aapt resource value: 0x7F0D0038
-			public static int mtrl_picker_date_header_unselected = 2131558456;
+			public static int mtrl_picker_invalid_format = 2131558456;
 			
 			// aapt resource value: 0x7F0D0039
-			public static int mtrl_picker_day_of_week_column_header = 2131558457;
+			public static int mtrl_picker_invalid_format_example = 2131558457;
 			
 			// aapt resource value: 0x7F0D003A
-			public static int mtrl_picker_invalid_format = 2131558458;
+			public static int mtrl_picker_invalid_format_use = 2131558458;
 			
 			// aapt resource value: 0x7F0D003B
-			public static int mtrl_picker_invalid_format_example = 2131558459;
+			public static int mtrl_picker_invalid_range = 2131558459;
 			
 			// aapt resource value: 0x7F0D003C
-			public static int mtrl_picker_invalid_format_use = 2131558460;
+			public static int mtrl_picker_navigate_to_year_description = 2131558460;
 			
 			// aapt resource value: 0x7F0D003D
-			public static int mtrl_picker_invalid_range = 2131558461;
+			public static int mtrl_picker_out_of_range = 2131558461;
 			
 			// aapt resource value: 0x7F0D003E
-			public static int mtrl_picker_navigate_to_year_description = 2131558462;
+			public static int mtrl_picker_range_header_only_end_selected = 2131558462;
 			
 			// aapt resource value: 0x7F0D003F
-			public static int mtrl_picker_out_of_range = 2131558463;
+			public static int mtrl_picker_range_header_only_start_selected = 2131558463;
 			
 			// aapt resource value: 0x7F0D0040
-			public static int mtrl_picker_range_header_only_end_selected = 2131558464;
+			public static int mtrl_picker_range_header_selected = 2131558464;
 			
 			// aapt resource value: 0x7F0D0041
-			public static int mtrl_picker_range_header_only_start_selected = 2131558465;
+			public static int mtrl_picker_range_header_title = 2131558465;
 			
 			// aapt resource value: 0x7F0D0042
-			public static int mtrl_picker_range_header_selected = 2131558466;
+			public static int mtrl_picker_range_header_unselected = 2131558466;
 			
 			// aapt resource value: 0x7F0D0043
-			public static int mtrl_picker_range_header_title = 2131558467;
+			public static int mtrl_picker_save = 2131558467;
 			
 			// aapt resource value: 0x7F0D0044
-			public static int mtrl_picker_range_header_unselected = 2131558468;
+			public static int mtrl_picker_text_input_date_hint = 2131558468;
 			
 			// aapt resource value: 0x7F0D0045
-			public static int mtrl_picker_save = 2131558469;
+			public static int mtrl_picker_text_input_date_range_end_hint = 2131558469;
 			
 			// aapt resource value: 0x7F0D0046
-			public static int mtrl_picker_text_input_date_hint = 2131558470;
+			public static int mtrl_picker_text_input_date_range_start_hint = 2131558470;
 			
 			// aapt resource value: 0x7F0D0047
-			public static int mtrl_picker_text_input_date_range_end_hint = 2131558471;
+			public static int mtrl_picker_text_input_day_abbr = 2131558471;
 			
 			// aapt resource value: 0x7F0D0048
-			public static int mtrl_picker_text_input_date_range_start_hint = 2131558472;
+			public static int mtrl_picker_text_input_month_abbr = 2131558472;
 			
 			// aapt resource value: 0x7F0D0049
-			public static int mtrl_picker_text_input_day_abbr = 2131558473;
+			public static int mtrl_picker_text_input_year_abbr = 2131558473;
 			
 			// aapt resource value: 0x7F0D004A
-			public static int mtrl_picker_text_input_month_abbr = 2131558474;
+			public static int mtrl_picker_toggle_to_calendar_input_mode = 2131558474;
 			
 			// aapt resource value: 0x7F0D004B
-			public static int mtrl_picker_text_input_year_abbr = 2131558475;
+			public static int mtrl_picker_toggle_to_day_selection = 2131558475;
 			
 			// aapt resource value: 0x7F0D004C
-			public static int mtrl_picker_toggle_to_calendar_input_mode = 2131558476;
+			public static int mtrl_picker_toggle_to_text_input_mode = 2131558476;
 			
 			// aapt resource value: 0x7F0D004D
-			public static int mtrl_picker_toggle_to_day_selection = 2131558477;
+			public static int mtrl_picker_toggle_to_year_selection = 2131558477;
 			
 			// aapt resource value: 0x7F0D004E
-			public static int mtrl_picker_toggle_to_text_input_mode = 2131558478;
+			public static int overflow_tab_title = 2131558478;
 			
 			// aapt resource value: 0x7F0D004F
-			public static int mtrl_picker_toggle_to_year_selection = 2131558479;
+			public static int password_toggle_content_description = 2131558479;
 			
 			// aapt resource value: 0x7F0D0050
-			public static int overflow_tab_title = 2131558480;
+			public static int path_password_eye = 2131558480;
 			
 			// aapt resource value: 0x7F0D0051
-			public static int password_toggle_content_description = 2131558481;
+			public static int path_password_eye_mask_strike_through = 2131558481;
 			
 			// aapt resource value: 0x7F0D0052
-			public static int path_password_eye = 2131558482;
+			public static int path_password_eye_mask_visible = 2131558482;
 			
 			// aapt resource value: 0x7F0D0053
-			public static int path_password_eye_mask_strike_through = 2131558483;
+			public static int path_password_strike_through = 2131558483;
 			
 			// aapt resource value: 0x7F0D0054
-			public static int path_password_eye_mask_visible = 2131558484;
+			public static int search_menu_title = 2131558484;
 			
 			// aapt resource value: 0x7F0D0055
-			public static int path_password_strike_through = 2131558485;
-			
-			// aapt resource value: 0x7F0D0056
-			public static int search_menu_title = 2131558486;
-			
-			// aapt resource value: 0x7F0D0057
-			public static int status_bar_notification_info_overflow = 2131558487;
+			public static int status_bar_notification_info_overflow = 2131558485;
 			
 			static String()
 			{

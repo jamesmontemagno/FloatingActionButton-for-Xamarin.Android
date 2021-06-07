@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
        <id>Refractored.FloatingActionButton</id>
-       <version>$version$</version>
+       <version>3.0.0-beta</version>
        <title>Floating Action Button for Xamarin.Android</title>
        <authors>James Montemagno</authors>
        <owners>James Montemagno</owners>
