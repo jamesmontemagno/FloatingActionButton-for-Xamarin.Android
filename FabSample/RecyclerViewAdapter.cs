@@ -9,7 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Android.Support.V7.Widget;
+using AndroidX.RecyclerView.Widget;
 
 namespace FabSample
 {

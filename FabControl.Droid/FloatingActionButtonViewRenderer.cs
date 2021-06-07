@@ -7,6 +7,7 @@ using Refractored.FabControl.Droid;
 using Refractored.Fab;
 using Android.Views;
 using System.IO;
+using Android.Content;
 
 [assembly: ExportRenderer(typeof(FloatingActionButtonView), typeof(FloatingActionButtonViewRenderer))]
 
@@ -36,9 +37,9 @@ namespace Refractored.FabControl.Droid
         /// <summary>
         /// Construtor
         /// </summary>
-        public FloatingActionButtonViewRenderer()
+        public FloatingActionButtonViewRenderer(Context context) : base(context)
         {
-            context = Xamarin.Forms.Forms.Context;
+            this.context = context;
 
             float d = context.Resources.DisplayMetrics.Density;
             var margin = (int)(MARGIN_DIPS * d); // margin in pixels

@@ -4,17 +4,18 @@ using Android.Content;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-using Android.Support.V7.App;
-using ActionBar = Android.Support.V7.App.ActionBar;
 using Android.Text;
-using Android.Support.V7.Widget;
-using RecyclerView = Android.Support.V7.Widget.RecyclerView;
 using Refractored.Fab;
+using AndroidX.AppCompat.App;
+using ActionBar = AndroidX.AppCompat.App.ActionBar;
+using AlertDialog = AndroidX.AppCompat.App.AlertDialog;
+using FloatingActionButton = Refractored.Fab.FloatingActionButton;
+using AndroidX.RecyclerView.Widget;
 
 namespace FabSample
 {
     [Activity(Label = "FabSample", MainLauncher = true, Icon = "@drawable/ic_launcher")]
-  public class MainActivity : AppCompatActivity, ActionBar.ITabListener, IDialogInterfaceOnClickListener
+    public class MainActivity : AppCompatActivity, ActionBar.ITabListener, IDialogInterfaceOnClickListener
   {
     int count = 1;
 
@@ -57,11 +58,11 @@ namespace FabSample
 	  
     }
 
-    public void OnTabReselected(ActionBar.Tab tab, Android.Support.V4.App.FragmentTransaction ft)
+    public void OnTabReselected(ActionBar.Tab tab, AndroidX.Fragment.App.FragmentTransaction ft)
     {
     }
 
-    public void OnTabSelected(ActionBar.Tab tab, Android.Support.V4.App.FragmentTransaction ft)
+    public void OnTabSelected(ActionBar.Tab tab, AndroidX.Fragment.App.FragmentTransaction ft)
     {
       switch (tab.Text)
       {
@@ -80,7 +81,7 @@ namespace FabSample
       }
     }
 
-    public void OnTabUnselected(ActionBar.Tab tab, Android.Support.V4.App.FragmentTransaction ft)
+    public void OnTabUnselected(ActionBar.Tab tab, AndroidX.Fragment.App.FragmentTransaction ft)
     {
       
     }
@@ -97,7 +98,7 @@ namespace FabSample
       {
         var text = (TextView)LayoutInflater.Inflate(Resource.Layout.about_view, null);
         text.TextFormatted = (Html.FromHtml(GetString(Resource.String.about_body)));
-        new Android.Support.V7.App.AlertDialog.Builder(this)
+        new AlertDialog.Builder(this)
         .SetTitle(Resource.String.about)
         .SetView(text)
         .SetInverseBackgroundForced(true)
@@ -112,7 +113,7 @@ namespace FabSample
     }
   }
 
-  public class ListViewFragment : Android.Support.V4.App.Fragment, IScrollDirectorListener, AbsListView.IOnScrollListener
+  public class ListViewFragment : AndroidX.Fragment.App.Fragment, IScrollDirectorListener, AbsListView.IOnScrollListener
   {
     public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
@@ -152,7 +153,7 @@ namespace FabSample
     }
   }
 
-  public class RecyclerViewFragment : Android.Support.V4.App.Fragment, IScrollDirectorListener
+  public class RecyclerViewFragment : AndroidX.Fragment.App.Fragment, IScrollDirectorListener
   {
     public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
@@ -189,7 +190,7 @@ namespace FabSample
     }
   }
 
-  public class ScrollViewFragment : Android.Support.V4.App.Fragment, IOnScrollChangedListener, IScrollDirectorListener
+  public class ScrollViewFragment : AndroidX.Fragment.App.Fragment, IOnScrollChangedListener, IScrollDirectorListener
   {
 
     public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -231,7 +232,7 @@ namespace FabSample
     }
   }
 
-  public class CustomFABFragment : Android.Support.V4.App.Fragment, IScrollDirectorListener, AbsListView.IOnScrollListener
+  public class CustomFABFragment : AndroidX.Fragment.App.Fragment, IScrollDirectorListener, AbsListView.IOnScrollListener
   {
 	  public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	  {

@@ -33,7 +33,7 @@
        </group>
        <group targetFramework="MonoAndroid10">
          <dependency id="Refractored.FloatingActionButton" version="$version$" />
-         <dependency id="Xamarin.Forms" version="2.4.0.282" />
+         <dependency id="Xamarin.Forms" version="5.0.0.1874" />
        </group>
        <group targetFramework="Xamarin.iOS10">
        </group>
