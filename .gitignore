@@ -61,3 +61,6 @@ library/.vs/FloatingActionButton/v15/sqlite3/storage.ide
 *.ide
 library/.vs/FloatingActionButton/v15/sqlite3/storage.ide
 *.ide
+/nuget.exe
+*.nupkg
+/.vs/VSWorkspaceState.json

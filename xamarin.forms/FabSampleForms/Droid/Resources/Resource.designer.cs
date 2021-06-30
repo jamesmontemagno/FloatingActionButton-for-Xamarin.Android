@@ -174,6 +174,7 @@ namespace FabSampleForms.Droid
 			global::Refractored.Fab.Resource.Id.text2 = global::FabSampleForms.Droid.Resource.Id.text2;
 			global::Refractored.Fab.Resource.Id.time = global::FabSampleForms.Droid.Resource.Id.time;
 			global::Refractored.Fab.Resource.Id.title = global::FabSampleForms.Droid.Resource.Id.title;
+			global::Refractored.Fab.Resource.Id.view_tree_lifecycle_owner = global::FabSampleForms.Droid.Resource.Id.view_tree_lifecycle_owner;
 			global::Refractored.Fab.Resource.Integer.status_bar_notification_info_maxnum = global::FabSampleForms.Droid.Resource.Integer.status_bar_notification_info_maxnum;
 			global::Refractored.Fab.Resource.Layout.custom_dialog = global::FabSampleForms.Droid.Resource.Layout.custom_dialog;
 			global::Refractored.Fab.Resource.Layout.notification_action = global::FabSampleForms.Droid.Resource.Layout.notification_action;
@@ -1880,6 +1881,7 @@ namespace FabSampleForms.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.up = global::FabSampleForms.Droid.Resource.Id.up;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.useLogo = global::FabSampleForms.Droid.Resource.Id.useLogo;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.view_offset_helper = global::FabSampleForms.Droid.Resource.Id.view_offset_helper;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.view_tree_saved_state_registry_owner = global::FabSampleForms.Droid.Resource.Id.view_tree_saved_state_registry_owner;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.visible = global::FabSampleForms.Droid.Resource.Id.visible;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.visible_removing_fragment_view_tag = global::FabSampleForms.Droid.Resource.Id.visible_removing_fragment_view_tag;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.withText = global::FabSampleForms.Droid.Resource.Id.withText;
@@ -5326,6 +5328,7 @@ namespace FabSampleForms.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.up = global::FabSampleForms.Droid.Resource.Id.up;
 			global::Xamarin.Forms.Platform.Resource.Id.useLogo = global::FabSampleForms.Droid.Resource.Id.useLogo;
 			global::Xamarin.Forms.Platform.Resource.Id.view_offset_helper = global::FabSampleForms.Droid.Resource.Id.view_offset_helper;
+			global::Xamarin.Forms.Platform.Resource.Id.view_tree_saved_state_registry_owner = global::FabSampleForms.Droid.Resource.Id.view_tree_saved_state_registry_owner;
 			global::Xamarin.Forms.Platform.Resource.Id.visible = global::FabSampleForms.Droid.Resource.Id.visible;
 			global::Xamarin.Forms.Platform.Resource.Id.visible_removing_fragment_view_tag = global::FabSampleForms.Droid.Resource.Id.visible_removing_fragment_view_tag;
 			global::Xamarin.Forms.Platform.Resource.Id.withText = global::FabSampleForms.Droid.Resource.Id.withText;
@@ -12214,16 +12217,22 @@ namespace FabSampleForms.Droid
 			public const int view_offset_helper = 2131231018;
 			
 			// aapt resource value: 0x7F08012B
-			public const int visible = 2131231019;
+			public const int view_tree_lifecycle_owner = 2131231019;
 			
 			// aapt resource value: 0x7F08012C
-			public const int visible_removing_fragment_view_tag = 2131231020;
+			public const int view_tree_saved_state_registry_owner = 2131231020;
 			
 			// aapt resource value: 0x7F08012D
-			public const int withText = 2131231021;
+			public const int visible = 2131231021;
 			
 			// aapt resource value: 0x7F08012E
-			public const int wrap_content = 2131231022;
+			public const int visible_removing_fragment_view_tag = 2131231022;
+			
+			// aapt resource value: 0x7F08012F
+			public const int withText = 2131231023;
+			
+			// aapt resource value: 0x7F080130
+			public const int wrap_content = 2131231024;
 			
 			static Id()
 			{

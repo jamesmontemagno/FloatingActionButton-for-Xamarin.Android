@@ -62,9 +62,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.AndroidX.Fragment">
-      <Version>1.2.5.5</Version>
-    </PackageReference>
     <PackageReference Include="Xamarin.Forms">
       <Version>5.0.0.1874</Version>
     </PackageReference>
